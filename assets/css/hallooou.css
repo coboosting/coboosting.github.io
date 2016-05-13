@@ -314,6 +314,8 @@ blockquote span{
 
 .navbar-custom .navbar-brand span.brand-logo{
     display: inline-block;
+    width: 175px;
+    height: 80px;
     padding: 0px 0;
     margin: 0 0px;
 }
