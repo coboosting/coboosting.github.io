@@ -67,6 +67,30 @@ header.carousel .fill {
     font-style: italic;
 }
 
+/* 3:   Common section styles
+/* ---------------------------------------------- */
+
+.content-section {
+    padding: 120px 0;
+    height: 100%;
+    overflow: hidden;
+    align-items: center;
+}
+
+.content-section.alt-bg{
+    background-color: #222;
+}
+
+.content-section.alt-bg-blue{
+    background-color: #246EC9;
+}
+
+.content-section.alt-bg-light{
+    background-color: #fafafa;
+    border-top:1px solid #f5f5f5;
+    border-bottom:1px solid #d2d2d2;
+}
+
 /* 4:   Navigation
 /* ---------------------------------------------- */
 
@@ -88,25 +112,10 @@ header.carousel .fill {
     margin: 80px 0;
 }
 
-.featurette {
-    overflow: hidden;
-    align-items: center;
-}
-
 .featurette-image {
-    width: 60%;
-}
-
-.featurette-image.pull-left {
-    margin-right: 40px;
-}
-
-.featurette-image.pull-right {
-    margin-left: 40px;
-}
-
-.featurette-heading {
-    font-size: 50px;
+    height: 100%;
+    max-height: 500px;
+    overflow: hidden;
 }
 
 /* Footer Styles */
