@@ -71,9 +71,9 @@ header.carousel .fill {
 /* ---------------------------------------------- */
 
 .content-section {
-    padding: 120px 0;
-    overflow: hidden;
-    align-items: center;
+    padding: 100px 0;
+    /*overflow: hidden;*/
+    /*align-items: center;*/
 }
 
 .content-section.alt-bg-blue{
@@ -110,7 +110,7 @@ header.carousel .fill {
     background-color: #999;
     border: 0 none;
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
 }
 
 .featurette-image {
@@ -119,9 +119,64 @@ header.carousel .fill {
 }
 
 .fixed-panel {
-  min-height: 150px;
-  max-height: 150px;
+  min-height: 200px;
+  max-height: 200px;
   overflow-y: scroll;
+}
+
+/* Carousel navigation
+/* ---------------------------------------------- */
+.carousel-container {
+    margin-top: 0px;
+    position: relative;
+}
+
+.carousel-item {
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.carousel-item img {
+    height: 100%;
+    max-height: 150px
+}
+
+.carousel-navigation .btn-next,
+.carousel-navigation .btn-prev {
+    position: absolute;
+  /*  width: 40px;
+    height: 70px;
+  */  top: 40%;
+    margin-top: -40px;
+    /*color: black;*/
+    /*line-height: 80px;*/
+    text-align: center;
+    /*font-size: 18px;*/
+    opacity: 1;
+    z-index: 997;
+    cursor: pointer;
+}
+
+.carousel-navigation .btn-prev {
+    left: 0;
+}
+
+.carousel-navigation .btn-next {
+    right: 0;
+}
+
+.carousel-navigation a:hover {
+    width: 60px;
+    color: red
+}
+
+.carousel-container:hover .carousel-navigation .btn-prev,
+.carousel-container:hover .carousel-navigation .btn-next {
+    opacity: 1;
 }
 
 /* Footer Styles */
