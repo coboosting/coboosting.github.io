@@ -104,6 +104,9 @@ blockquote {
 .navbar-blue {
   background-color: #33B0DB; }
 
+.navbar-green {
+  background-color: #339999; }
+
 .navbar-white {
   background-color: white; }
 
@@ -762,3 +765,10 @@ blockquote {
   #news-20 td, #news-20 th {
     border: solid 1px #ccc;
     padding: 5px; }
+
+#cg-container {width: 100%;}
+#left-content {float: left; margin-left: 50px; width: 30%;}
+#right-graph {float: right; width: 60%;}
+#cg-container .triple-left {float: left; width: 33%;}
+#cg-container .triple-center {float: left; width: 33%;}
+#cg-container .triple-right {float: left; width: 33%;}
