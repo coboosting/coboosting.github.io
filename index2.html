@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cn">
 
 <head>
 
@@ -37,22 +37,22 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-custom navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ziyun-navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
                 <a href="index.html">
-                 <span class="brand-logo"><img src="assets/images/logo_big_font_b.png" onerror="this.src='assets/images/logo_big_font_b.png'; this.onerror=null;" alt="秭云科技" title="秭云科技" class="img-responsive"></span>
+                 <span class="brand-logo"><img src="assets/images/logo_big_font_w.png" onerror="this.src='assets/images/logo_big_font_w.png'; this.onerror=null;" alt="秭云科技" title="秭云科技" class="img-responsive"></span>
                  </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="ziyun-navbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="about.html">我们</a></li>
                     <li><a href="services.html">解决方案</a></li>
@@ -70,26 +70,6 @@
                     <li><a href="career.html">诚邀加入</a></li>
                     <li><a href="contact.html">联系我们</a></li>
                     <li><a href="milestone.html">动态</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-item.html">Single Portfolio Item</a>
-                            </li>
-                        </ul>
-                    </li>
                     <li class="nav-language"><a href="en/index.html">EN</a></li>
                 </ul>
             </div>
@@ -113,17 +93,19 @@
             <div class="item active">
                 <div class="fill" style="background-image:url('assets/images/health_management.jpg');"></div>
                 <div class="carousel-caption">
+                    <div class="text-center" style="width:100%">
                     <h2>智能分级诊疗，优化医疗资源</h2>
                     <h4>基于人体体特数据和医疗数据的病情筛选和健康评估，帮助医院进行病情分流和分级诊疗</h4>
-                    <p><a href="services.html"><font size="5px">了解更多 >></font></a></p>
+                    <a href="#" class="btn-custom btn btn-danger btn-shadow">了解更多</a>
+                    </div>
                 </div>
             </div>
             <div class="item">
                 <div class="fill" style="background-image:url('assets/images/health_diagnosis.jpg');"></div>
                 <div class="carousel-caption">
                     <h2>慢性病全程管理，降低医疗成本</h2>
-                    <h4></h4>
-                    <p><a href="services.html"><font size="5px">了解更多 >></font></a></p>
+                    <h4>基于大数据模型的慢性病监控与预测，帮助病友全程掌控自己的病情，让看病从被动变为主动</h4>
+                    <a href="#" class="btn-custom btn btn-danger btn-shadow">了解更多</a>
                 </div>
             </div>
             <div class="item">
@@ -131,7 +113,7 @@
                 <div class="carousel-caption">
                     <h2>大数据云平台，数据及是服务</h2>
                     <h4>秭云CaaS云平台<SUP>&reg</SUP>+大数据引擎<sup>&reg</sup>，私有化部署，适合于教育，医疗等领域</h4>
-                    <p><a href="services.html"><font size="5px">了解更多 >></font></a></p>
+                    <a href="#" class="btn-custom btn btn-danger btn-shadow">了解更多</a>
                 </div>
             </div>
             <div class="item">
@@ -139,28 +121,28 @@
                 <div class="carousel-caption">
                     <h2>用户到医生的端到端连接，实时健康监控</h2>
                     <h4>通过可穿戴医疗设备和智能手机，数据实时分析预测，异常直接发送给加盟医院</h4>
-                    <p><a href="services.html"><font size="5px">了解更多 >></font></a></p>
+                    <a href="#" class="btn-custom btn btn-danger btn-shadow">了解更多</a>
                 </div>
             </div>
         </div>
 
         <!-- Controls -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
+            <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
+            <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
     </header>
 
     <!-- Page Content -->
     <!-- First Featurette -->
-    <section id="about" class="about content-section">
+    <section id="about" class="about content-section full-height">
         <div class="container">
             <div class="row">
                 <div class="col-sm-7">
                     <!-- Display image -->
-                    <img src="assets/images/ziyun_ecosystem.png" class="featurette-image center-block img-responsive">
+                    <img src="assets/images/ziyun_ecosystem.png" class="featurette-image center-block img-responsive img-shadow img-rounded">
                 </div>
 
                 <div class="col-sm-5">
@@ -193,7 +175,7 @@
         </div><!-- /.container -->
     </section><!-- /.section -->
 
-    <section id="about" class="about content-section alt-bg-light">
+    <section id="about" class="about content-section full-height alt-bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
@@ -215,14 +197,14 @@
                 </div>
                 <div class="col-sm-8">
                     <!-- Display image -->
-                    <img src="assets/images/ziyun_coretech.png" class="featurette-image center-block alt-bg-light img-responsive">
+                    <img src="assets/images/ziyun_coretech.png" class="center-block img-responsive">
                 </div>
 
             </div><!-- /.row -->
         </div><!-- /.container -->
     </section><!-- /.section -->
 
-    <section id="technology" class="content-section">
+    <section id="technology" class="content-section full-height">
         <div class="container">
             <div class="col-lg-12 text-center">
                 <h2>核心技术</h2>
@@ -231,7 +213,7 @@
             <hr class="featurette-divider">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="panel panel-default">
+                    <div class="panel panel-default panel-shadow">
                         <div class="panel-heading">
                             <img class="center-block img-responsive" src="assets/images/heartbeat.png">
                         </div>
@@ -242,7 +224,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="panel panel-default">
+                    <div class="panel panel-default panel-shadow">
                         <div class="panel-heading">
                             <img class="center-block img-responsive" src="assets/images/xray.png">
                         </div>
@@ -254,7 +236,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="panel panel-default">
+                    <div class="panel panel-default panel-shadow">
                         <div class="panel-heading">
                             <img class="center-block img-responsive" src="assets/images/emr.png">
                         </div>
@@ -272,7 +254,7 @@
         </div><!-- /.container -->
     </section><!-- /.section -->
 
-    <section id="services" class="services content-section alt-bg-light">
+    <section id="services" class="services content-section full-height alt-bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -283,7 +265,7 @@
                 <hr class="featurette-divider">
 
                 <div class="col-md-4">
-                    <div class="panel panel-warning">
+                    <div class="panel panel-warning panel-shadow">
                         <div class="panel-heading">
                             <img class="center-block img-responsive" src="assets/images/lab.png">
                         </div>
@@ -292,12 +274,12 @@
                             <p class="text-muted">基于秭云CaaS云平台&copy;和秭云大数据云引擎&copy;搭建的大数据实训平台，并配以秭云大数据理论和商务课程以及秭云教学云模块。基于该平台老师和学生可以实践操作和体会大数据云平台整个的数据接入、存储、数据清洗、数据分析、可视化显示等环节</p>
                         </div>
                         <div class="panel-body text-center">
-                        <a href="education.html" class="btn btn-success">了解更多</a>
+                        <a href="education.html" class="btn btn-default">了解更多</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="panel panel-warning">
+                    <div class="panel panel-warning panel-shadow">
                         <div class="panel-heading">
                             <img class="center-block img-responsive" src="assets/images/ecg_device.png">
                         </div>
@@ -311,7 +293,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="panel panel-warning">
+                    <div class="panel panel-warning panel-shadow">
                         <div class="panel-heading">
                             <img class="center-block img-responsive" src="assets/images/doctor.png">
                         </div>
@@ -373,7 +355,7 @@
                     </a>
 
                     <a class="btn-next">
-                        <span class="fa-stack fa-2x text-muted">
+                        <span class="fa-stack fa-2x">
                               <i class="fa fa-circle fa-stack-2x"></i>
                               <i class="fa fa-angle-right fa-stack-1x fa-inverse"></i>
                         </span>
@@ -384,8 +366,8 @@
     </section><!-- /.section -->
 
     <!-- Call to Action Section -->
-    <!-- <section id="services" class="services content-section"> -->
-        <div class="jumbotron">
+    <section id="services" class="services content-section alt-bg-light">
+        <!-- <div class="jumbotron"> -->
             <div class="container">
                 <!-- <div class="col-md-8">
                     <p>请致电.</p>
@@ -394,20 +376,48 @@
                     <a class="btn btn-lg btn-danger" href="#"><i class="fa fa-lg fa-weixin"></i> 联系我们</a>
                 </div>
             </div>
-        </div>
-    <!-- </section> -->
+        <!-- </div> -->
+    </section>
 
     <!-- Footer -->
-    <div class="container">
     <footer>
+    <section class="content-section alt-bg-dark" style="padding:60px 0;">
+        <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-                <p>Copyright &copy; 秭云科技 2016</p>
+            <div class="col-md-12">
+                <a href="#">
+                    <span class="brand-logo"><img src="assets/images/logo_small_font_w.png" onerror="this.src='assets/images/logo_small_font_w.png'; this.onerror=null;" alt="秭云科技" title="秭云科技" class="img-responsive">
+                    </span>
+                </a>
             </div>
         </div>
+        <br>
+        <div class="row" style="color:#dddddd;">
+            <div class="col-md-6">
+                <!-- <p>秭云科技将大数据技术和深度学习算法带入健康医疗领域。我们的目标是打造一个从
+                用户，终端，再到医院等领域的端到端的良性生态系统。借此，秭云希望能将您的看病问诊
+                从被动变为主动，让您能永远保持健康。</p> -->
+                <p>Copyright &copy; 秭云科技 2016</p>
+            </div>
+            <div class="col-md-3">
+                <p><a href="about.html">关于我们</a></p>
+                <p><a href="services.html">解决方案</a></p>
+                <p><a href=#>其它产品</a></p>
+                <p><a href="career.html">诚邀加入</a></p>
+                <p><a href="contact.html">联系我们</a></p>
+                <p><a href="blog.html">博客</a></p>
+            </div>
+            <div class="col-md-3" style="color:white">
+                <p><i class="fa fa-envelope fa-lg"></i>&nbsp;&nbsp;<a href="mailto:support@coboosting.com">support@coboosting.com</a></p>
+                <p><i class="fa fa-wechat fa-lg"></i>&nbsp;&nbsp;微信</p>
+                <p><i class="fa fa-weibo fa-lg"></i>&nbsp;&nbsp;微博</p>
+                <p><i class="fa fa-facebook-square fa-lg"></i>&nbsp;&nbsp;Facebook</p>
+                <p><i class="fa fa-github-square fa-lg"></i>&nbsp;&nbsp;Github</p>
+            </div>
+        </div>
+        </div>
+    </section>
     </footer>
-    </div>
-    <!-- /.container -->
 
     <!-- jQuery -->
     <script src="js/jquery-1.9.1.min.js"></script>
