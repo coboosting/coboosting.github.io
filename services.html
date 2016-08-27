@@ -1,409 +1,273 @@
+
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-
+<html>
+  <head>
+    <meta name="baidu-site-verification" content="5K80ZmpYo7">
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Modern Business - Start Bootstrap Template</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/modern-business.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>博雅大数据实训平台</title>
+    <meta name="robots" content="noarchive">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="js/fullpage/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="index.html">
-                 <span class="brand-logo"><img src="assets/images/logo_small.png" onerror="this.src='assets/images/logo_small.png'; this.onerror=null;" alt="秭云科技" title="秭云科技" class="img-responsive"></span>
-                 </a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="about.html">我们</a>
-                    </li>
-                    <li>
-                        <a href="services.html">解决方案</a>
-                    </li>
-                    <li>
-                        <a href="services.html">诚邀加入</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">联系我们</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">其他产品 <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="education.html">大数据教育解决方案</a>
-                            </li>
-                            <li>
-                                <a href="sidebar.html">大数据金融解决方案</a>
-                            </li>
-                            <li>
-                                <a href="faq.html">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="404.html">404</a>
-                            </li>
-                            <li>
-                                <a href="pricing.html">Pricing Table</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">动态 <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="blog-home-1.html">Blog Home 1</a>
-                            </li>
-                            <li>
-                                <a href="blog-home-2.html">Blog Home 2</a>
-                            </li>
-                            <li>
-                                <a href="blog-post.html">Blog Post</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-item.html">Single Portfolio Item</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-language"><a href="en/index.html">EN</a></li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+    <link href="css/plugins/owl.theme.css" rel="stylesheet">
+    <link href="css/plugins/owl.transitions.css" rel="stylesheet">
+    <style>
+      #navbar .navbar-brand .brand-white {
+          background: url(assets/images/logo_small_font_w.png) no-repeat;
+          _background: none;
+          _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="assets/images/logo_small_font_w.png", sizingMethod='crop');
+      }
+      #navbar .navbar-brand .brand-blue {
+          background: url(assets/images/logo_small_font_w.png) no-repeat;
+          _background: none;
+          _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="assets/images/logo_small_font_w.png", sizingMethod='crop');
+      }
+      #fp-nav ul li a span {
+          background: url(assets/images/fp-nav.png) no-repeat;
+          _background: none;
+          _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="assets/images/fp-nav.png", sizingMethod='crop');
+      }
+      #fp-nav ul li a.active span {
+          background: url(assets/images/fp-nav-active.png) no-repeat;
+          _background: none;
+          _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="assets/images/fp-nav-active.png", sizingMethod='crop');
+      }
+    </style>
+  </head>
+  <body>
+    <div class="popup-menu hidden">
+      <div class="backdrop"></div>
+      <div class="popup-container">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a href="index.html">
+           <span class="brand-logo"><img src="assets/images/logo_small_font_w.png" onerror="this.src='assets/images/logo_small_font_w.png'; this.onerror=null;" alt="秭云科技" title="秭云科技" class="img-responsive"></span>
+           </a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="about.html">我们</a></li>
+          <li><a href="services.html">解决方案</a></li>
+          <li><a href="education.html">其他产品</a></li>
+          <li><a href="career.html">诚邀加入</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+          <li><a href="milestone.html">动态</a></li>
+          <li><a href="en/index.html">EN</a></li>
+        </ul>
         </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Page Content -->
-    <div class="container">
-
-        <!-- Page Heading/Breadcrumbs -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Services
-                    <small>Subheading</small>
-                </h1>
-                <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a>
-                    </li>
-                    <li class="active">Services</li>
-                </ol>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Image Header -->
-        <div class="row">
-            <div class="col-lg-12">
-                <img class="img-responsive" src="http://placehold.it/1200x300" alt="">
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Service Panels -->
-        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Services Panels</h2>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                        <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="panel-body">
-                        <h4>Service One</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                        <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="panel-body">
-                        <h4>Service Two</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                        <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-support fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="panel-body">
-                        <h4>Service Three</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                        <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-database fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="panel-body">
-                        <h4>Service Four</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Service Tabs -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Service Tabs</h2>
-            </div>
-            <div class="col-lg-12">
-
-                <ul id="myTab" class="nav nav-tabs nav-justified">
-                    <li class="active"><a href="#service-one" data-toggle="tab"><i class="fa fa-tree"></i> Service One</a>
-                    </li>
-                    <li class=""><a href="#service-two" data-toggle="tab"><i class="fa fa-car"></i> Service Two</a>
-                    </li>
-                    <li class=""><a href="#service-three" data-toggle="tab"><i class="fa fa-support"></i> Service Three</a>
-                    </li>
-                    <li class=""><a href="#service-four" data-toggle="tab"><i class="fa fa-database"></i> Service Four</a>
-                    </li>
-                </ul>
-
-                <div id="myTabContent" class="tab-content">
-                    <div class="tab-pane fade active in" id="service-one">
-                        <h4>Service One</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                    </div>
-                    <div class="tab-pane fade" id="service-two">
-                        <h4>Service Two</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                    </div>
-                    <div class="tab-pane fade" id="service-three">
-                        <h4>Service Three</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                    </div>
-                    <div class="tab-pane fade" id="service-four">
-                        <h4>Service Four</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Service List -->
-        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Service List</h2>
-            </div>
-            <div class="col-md-4">
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Service One</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Service Two</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-support fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Service Three</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-database fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Service Four</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-bomb fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Service Five</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-bank fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Service Six</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Service Seven</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-space-shuttle fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Service Eight</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-recycle fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Service Nine</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-        </footer>
-
+      </div>
     </div>
-    <!-- /.container -->
+    <div id="navbar">
+      <div class="nav-edu">
+        <div class="container clearfix">
+          <div class="left">
+          <a href="index.html">
+           <span class="brand-logo"><img src="assets/images/logo_small_font_w.png" onerror="this.src='assets/images/logo_small_font_w.png'; this.onerror=null;" alt="秭云科技" title="秭云科技" class="img-responsive"></span>
+           </a>
+          </div>
+          <div class="right">
+            <button data-toggle=".navbar-collapse" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="about.html">我们</a></li>
+                <li><a href="services.html">解决方案</a></li>
+                <li><a href="education.html">其他产品</a></li>
+                <li><a href="career.html">诚邀加入</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+                <li><a href="milestone.html">动态</a></li>
+                <li><a href="en/index.html">EN</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="fullpage">
+      <div class="section">
+          <div class="container">
+              <div class="section-content clearfix">
+                  <div class="col-4">
+                      <!-- Display image -->
+                      <img src="assets/images/ziyun_ecosystem.png" width="180%" class="featurette-image center-block img-responsive">
+                  </div>
+                  <div class="col-4">
+                      <h2></h2>
+                  </div>
+                  <div class="col-4">
+                      <h2>医疗健康生态体系</h2>
+                      <h4 class="text-muted"><font color="#707070">应用行业顶尖的大数据分析和人工智能技术，融合各方数据，提炼经验和智慧，共同打造包含医疗，体检，保险，设备，和社区的生态系统</font></h4>
+                      <br>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+                      <p>
+                      <ul><li  style="color: #707070">分级诊疗，优化医疗资源分配与管理</li></ul>
+                      </p>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+                      <p>
+                      <ul><li  style="color: #707070">临床辅助，提高基层医生的诊疗效率</li></ul>
+                      </p>
 
-</body>
+                      <p>
+                      <ul><li  style="color: #707070">健康监控，利用可穿戴健康设备评估健康</li></ul>
+                      </p>
 
+                      <p>
+                      <ul><li  style="color: #707070">慢病管理，降低医疗成本</li></ul>
+                      </p>
+
+                      <p>
+                      <ul><li  style="color: #707070">病后干预，推动商业医保的普及</li></ul>
+                      </p>
+                  </div>
+
+              </div><!-- /.row -->
+          </div><!-- /.container -->
+      </div><!-- /.section -->
+
+      <div class="section">
+          <div id="cg-container">
+              <div id="left-content">
+                  <h2>云+大数据+深度学习(DNN)</h2>
+                  <h4 class="text-muted"><font color="#707070">以互联网的思维来理解医疗健康</font></h4>
+                  <br>
+
+                  <ul>
+                  <li style="color: #707070">基于Docker技术的CaaS云平台，弹性搭建，私有云部署</li></ul>
+
+                  <ul><li style="color: #707070">提供大数据批处理，流处理，和交互式处理引擎，深度挖掘数据中的智慧</li></ul>
+
+                  <ul><li style="color: #707070">应用深度学习技术，从体征，诊疗，甚至基因数据中训练机器学习模型，从而提高诊断效率和精度</li>
+                  </ul>
+              </div>
+              <div id="right-graph">
+                  <!-- Display image -->
+                  <img src="assets/images/ziyun_coretech.png" width="85%" class="featurette-image center-block img-responsive">
+              </div>
+          </div><!-- /.container -->
+      </div><!-- /.section -->
+
+      <div class="section">
+          <div id="cg-container">
+              <h1 class="page-header" align="center">核心技术</h1>
+              <h1></h1>
+              <br><br><br><br><br>
+              <div class="triple-left" align="center">
+                  <img class="center-block img-responsive" src="assets/images/heartbeat.png">
+                  <br>
+                  <h2 class="text-muted" style="color: #33b0db">DeepECG&reg;</h2>
+                  <br>
+                  <p class="text-muted" style="color: #33b0db">基于深度学习的心电图分析算法，<br>适合心律不齐和心脏疾病自动分析</p>
+              </div>
+              <div class="triple-right" align="center">
+                  <img class="center-block img-responsive" src="assets/images/xray.png">
+                  <br>
+                  <h2 class="text-muted" style="color: #33b0db">DeepMI&reg;</h2>
+                  <br>
+                  <p class="text-muted" style="color: #33b0db">基于深度学习的医疗影像分类和识别算法，<br>适合CT, MRT, 以及X-Ray的疾病应用分析</p>
+              </div>
+              <div class="triple-center" align="center">
+                  <img class="center-block img-responsive" src="assets/images/emr.png">
+                  <br>
+                  <h2 class="text-muted" style="color: #33b0db">DeepEMR&reg;</h2>
+                  <br>
+                  <p class="text-muted" style="color: #33b0db">基于深度学习的医疗电子记录分析算法，<br>适合文本信息的疾病应用分析</p>
+              </div>
+              <h1 class="page-header" align="center" style="color: white">br</h1>
+              <p align="center"><a href="technology.html" style="color:darkred">更多技术>></a></p>
+          </div><!-- /.container -->
+      </div><!-- /.section -->
+
+      <div class="section">
+          <div id="cg-container">
+              <h1 class="page-header" align="center">产品与服务</h1>
+              <h1></h1>
+              <br><br><br><br><br>
+              <div class="triple-left" align="center">
+                  <img class="center-block img-responsive" src="assets/images/lab.png">
+                  <br>
+                  <h2 class="text-muted" style="color: #33b0db">秭云大数据实训实验室</h2>
+                  <br>
+                  <p class="text-muted" style="color: #A0A0A0">基于秭云CaaS云平台&copy;和秭云大数据云引擎&copy;<br>搭建的大数据实训平台，并配以秭云大数据理<br>论和商务课程以及秭云教学云模块。基于该<br>平台老师和学生可以实践操作和体会大数据云平<br>台整个的数据接入、存储、数据清洗、数据分析、<br>可视化显示等环节。<a href="education.html" style="color:darkred">了解更多>></a></p>
+              </div>
+              <div class="triple-right" align="center">
+                  <img class="center-block img-responsive" src="assets/images/ecg_device.png">
+                  <br>
+                  <h2 class="text-muted" style="color: #33b0db">秭云心电图可穿戴设备</h2>
+                  <br>
+                  <p class="text-muted" style="color: #A0A0A0">利用部署在秭云CaaS云平台&copy;上的DeepECG&copy;<br>算法来分析通过可穿戴设备上采集来的实时单<br>导联心电图数据，健康评估信息通过配套的手机<br>App实时显示给用户。<a href="education.html" style="color:darkred">了解更多>></a></p>
+              </div>
+              <div class="triple-center" align="center">
+                  <img class="center-block img-responsive" src="assets/images/doctor.png">
+                  <br>
+                  <h2 class="text-muted" style="color: #33b0db">秭云智能分级诊疗系统</h2>
+                  <br>
+                  <p class="text-muted" style="color: #A0A0A0">利用部署在秭云CaaS云平台&copy;上的秭云健康医疗<br>云算法&copy;，自动对病人上传的人体生命体征数据和<br>其它医疗数据进行有无疾病的筛选过滤；同时<br>对病例进行疾病严重程度分类，指导医生进行分级<br>诊疗，从而达到优化医疗资源的目的</p>
+              </div>
+              <h1 class="page-header" align="center" style="color: white">br</h1>
+              <p align="center"><a href="education.html" style="color:darkred">全部产品与服务>></a></p>
+          </div><!-- /.container -->
+      </div><!-- /.section -->
+
+      <div class="section section-mixed">
+        <div class="container">
+        <h1 class="page-header" align="center">合作伙伴<br><br><br><br></h1>
+          <div class="section-content clearfix">
+            <div class="col-6 text-center"><img src="assets/images/zte_logo.png" width="60%" alt="">
+            </div>
+            <div class="col-6 text-center"><img src="assets/images/jseti_logo.png" width="30%" alt="">
+            </div>
+          </div>
+          <div class="section-content clearfix">
+            <h1 class="page-header"><br></h1>
+          </div>
+          <div class="section-content clearfix">
+            <div class="col-6 text-center"><img src="assets/images/oymotion_logo.png" width="60%" alt="">
+            </div>
+            <div class="col-6 text-center"><img src="assets/images/hmst_logo.png" width="60%" alt="">
+            </div>
+          </div>
+          <div id="footer">
+            <div class="text-center">
+              <div class="copyright">&copy; 2016 秭云科技版权所有 </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/fullpage/jquery.fullpage.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/plugins/owl.carousel.min.js"></script>
+    <script src="js/ziyun.js"></script>
+    <script>
+      $('#fullpage').fullpage({
+          navigation: true,
+          onLeave: function(index, nextIndex, direction) {
+              var ele = '#navbar',
+                      $ele = $(ele);
+              $ele.removeClass('navbar-white navbar-green');
+              switch (nextIndex) {
+                  case 1:
+                  case 2:
+                  case 3:
+                  case 4:
+                  case 5:
+                      $ele.addClass('navbar-green');
+                      break;
+              }
+          }
+      });
+
+    </script>
+  </body>
 </html>
