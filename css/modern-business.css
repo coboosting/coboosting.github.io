@@ -32,10 +32,6 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.btn-shadow {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 /* Link Effects */
 /*a:visited {
     color: darkgray !important;
@@ -47,17 +43,30 @@ a:hover, a:active {
     text-decoration: none !important;
 }
 
-.navbar a:hover, a:active {
-    color: lightgray !important;
+.navbar .collapse li.active {
+    color: white !important;
+    text-decoration: none !important;
+    background-color: #b70808 !important;
+}
+
+.navbar .collapse a:hover, a:active {
+    color: white !important;
+    text-decoration: none !important;
+    background-color: #b70808 !important;
+}
+
+.navbar .collapse a {
+    color: #505a69 !important;
+    opacity: 0.8 !important;
     text-decoration: none !important;
 }
 
-.navbar a {
+.navbar .navbar-toggle a {
     color: white !important;
     text-decoration: none !important;
 }
 
-footer a {
+.content-section a {
     color: #eeeeee !important;
     text-decoration: none !important;
 }
@@ -71,7 +80,9 @@ header.carousel {
 
 .btn-custom {
     margin-top: 30px;
-    width: 15%;
+    width: 20%;
+    min-width: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 header.carousel .item,
@@ -95,6 +106,7 @@ header.carousel-caption {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    z-index: 10;
     -webkit-box-align: center;
     -moz-box-align: center;
     -ms-flex-align: center;
@@ -137,6 +149,7 @@ header.carousel-caption {
     align-items: center;
 }
 
+/*
 .content-section.full-height {
     height: 100%;
     position: relative;
@@ -156,13 +169,13 @@ header.carousel-caption {
 .content-section.alt-bg-light{
     background-color: #fafafa;
     border-top:1px solid #f5f5f5;
-    border-bottom:1px solid #f5f5f5; /*#d2d2d2;*/
+    border-bottom:1px solid #f5f5f5;
 }
 
 .content-section.alt-bg-dark{
     background-color: #5f5f5f;
     border: none;
-}
+}*/
 
 /* 4:   Navigation
 /* ---------------------------------------------- */
@@ -170,7 +183,9 @@ header.carousel-caption {
 .navbar-custom {
     margin-bottom: 0;
     height: 55px;
-    background-color: rgba(100, 100, 100, .4);
+    /*background-color: rgba(100, 100, 100, .4);*/
+    background-color: #ede7e3;
+    opacity: 0.9;
     border: none;
 }
 
@@ -181,6 +196,7 @@ header.carousel-caption {
     max-height: 80px;
     padding: 5px 0;
     margin: 0 0px;
+    opacity: 0.8;
 }
 
 .featurette-divider {
@@ -227,16 +243,11 @@ header.carousel-caption {
 .carousel-navigation .btn-next,
 .carousel-navigation .btn-prev {
     position: absolute;
-  /*  width: 40px;
-    height: 70px;
-  */  top: 40%;
-    margin-top: -40px;
-    margin-left: -80px;
-    margin-right: -80px;
-    line-height: 80px;
+    top: 50%;
+    margin-left: 80px;
+    margin-right: 80px;
     text-align: center;
-    font-size: 18px;
-    opacity: 1;
+    font-size: 16px;
     z-index: 997;
     cursor: pointer;
 }
@@ -261,12 +272,6 @@ header.carousel-caption {
 .carousel-container:hover .carousel-navigation .btn-prev,
 .carousel-container:hover .carousel-navigation .btn-next {
     opacity: 1;
-}
-
-/* Footer Styles */
-
-footer {
-    margin: 60px 0;
 }
 
 /* Responsive Styles */
