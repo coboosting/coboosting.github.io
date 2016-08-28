@@ -133,6 +133,41 @@
           </div><!-- /.container -->
       </div><!-- /.section -->
 
+      <div style="background-image:url(assets/images/backgroud.png)" class="section">
+          <div id="cg-container">
+              <div id="left-content">
+                  <h1><br></h1>
+                  <h2>服务成本管理  <small>基于大数据的模式发现</small></h2>
+                  <h3 class="text-muted"><font color="#707070">服务成本</font></h3>
+                  <ul>
+                  <li style="color: #707070">窗口太多增加服务成本</li>
+                  <li style="color: #707070">排队太久降低服务质量</li>
+                  <li style="color: #707070">各网点之间严重不平衡</li>
+                  </ul>
+                  <br>
+                  <h3 class="text-muted"><font color="#707070">银行排队系统是一个典型的MM/k模型</font></h3>
+                  <ul><li style="color: #707070">顾客签到时间通常满足泊松分布</li>
+                    <ul>
+                      <li style="color: #707070">λ：顾客到达率</li>
+                      <li style="color: #707070">1/λ：顾客到达平均间隔时间</li>
+                    </ul>
+                  </ul>
+                  <ul><li style="color: #707070">服务过程完成时间通常满足指数分布</li>
+                    <ul>
+                      <li style="color: #707070">µ：每个通道服务完成率</li>
+                      <li style="color: #707070">1/µ：每个通道服务完成时间</li>
+                    </ul>
+                  </ul>
+                  <h4 style="color: #707070">M：马尔科夫分布/Markov Distribution<br>k：代表并行服务通道数目</h4>
+              </div>
+              <div id="right-graph">
+                  <h1><br><br><br></h1>
+                  <!-- Display image -->
+                  <img src="assets/images/queue_system.png" width="80%" class="featurette-image center-block img-responsive">
+              </div>
+          </div><!-- /.container -->
+      </div><!-- /.section -->
+
       <div class="section">
         <div class="container">
           <div class="map-title color-blue">全国营业网点实时KPI <font color="#909090" size="4px">不同色块用于指示KPI高低</font></div>
@@ -227,8 +262,8 @@
                       $ele = $(ele);
               $ele.removeClass('navbar-white navbar-green');
               switch (nextIndex) {
-                  case 2:
                   case 3:
+                  case 4:
                       $ele.addClass('navbar-green');
                       break;
               }
