@@ -15,6 +15,26 @@ body {
     padding-top: 0px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
+/* Color */
+
+.gray{
+    color: #a5a5a5;
+}
+
+.red{
+    color: rgba(254,82,76, 1);
+}
+
+.caption{
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.link{
+    font-weight: 100;
+    font-size: 15px;
+}
+
 /* Image Effects */
 .img-portfolio {
     margin-bottom: 30px;
@@ -33,10 +53,6 @@ body {
 }
 
 /* Link Effects */
-/*a:visited {
-    color: darkgray !important;
-    text-decoration: none !important;
-}*/
 
 a:hover, a:active {
     color: lightgray !important;
@@ -49,20 +65,15 @@ a:hover, a:active {
     background-color: #b70808 !important;
 }
 
-.navbar .collapse a:hover, a:active {
+.navbar .collapse a:hover {
     color: white !important;
     text-decoration: none !important;
-    background-color: #b70808 !important;
+    background-color: rgba(254,82,76, 1) !important; /* Red */
 }
 
 .navbar .collapse a {
-    color: #505a69 !important;
-    opacity: 0.8 !important;
-    text-decoration: none !important;
-}
-
-.navbar .navbar-toggle a {
-    color: white !important;
+    color: #505a69 !important;  /* Dark gray */
+    opacity: 1.0 !important;
     text-decoration: none !important;
 }
 
@@ -71,18 +82,10 @@ a:hover, a:active {
     text-decoration: none !important;
 }
 
-
 /* Home Page Carousel */
 
 header.carousel {
     height: 100%;
-}
-
-.btn-custom {
-    margin-top: 30px;
-    width: 20%;
-    min-width: 100px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 header.carousel .item,
@@ -147,27 +150,21 @@ header.carousel-caption {
     padding: 100px 0;
     overflow: hidden;
     align-items: center;
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/*
+.row.row-50 {
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
 .content-section.full-height {
     height: 100%;
-    position: relative;
-    top: 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
 }
 
 .content-section.alt-bg-light{
-    background-color: #fafafa;
+    background-color: #ede7e3;
     border-top:1px solid #f5f5f5;
     border-bottom:1px solid #f5f5f5;
 }
@@ -175,7 +172,7 @@ header.carousel-caption {
 .content-section.alt-bg-dark{
     background-color: #5f5f5f;
     border: none;
-}*/
+}
 
 /* 4:   Navigation
 /* ---------------------------------------------- */
@@ -183,10 +180,15 @@ header.carousel-caption {
 .navbar-custom {
     margin-bottom: 0;
     height: 55px;
-    /*background-color: rgba(100, 100, 100, .4);*/
+    text-transform: none;
     background-color: #ede7e3;
     opacity: 0.9;
     border: none;
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    -webkit-transition: background .5s ease-in-out;
+   -moz-transition: background .5s ease-in-out;
+        transition: background .5s ease-in-out;
 }
 
 .navbar-custom .navbar-header span.brand-logo{
@@ -197,6 +199,31 @@ header.carousel-caption {
     padding: 5px 0;
     margin: 0 0px;
     opacity: 0.8;
+}
+
+.navbar-custom.top-nav-collapse{
+    background: #ede7e3; /* Primary color, can be changed via colors.css */
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 600;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 2px 6px;
+    color: #fff;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
 }
 
 .featurette-divider {
@@ -216,7 +243,7 @@ header.carousel-caption {
 .fixed-panel {
   min-height: 200px;
   max-height: 200px;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 /* Carousel navigation
@@ -274,66 +301,137 @@ header.carousel-caption {
     opacity: 1;
 }
 
+/* 12:  Buttons
+/* ---------------------------------------------- */
+.btn-custom, .btn-custom-lg {
+    color: #fff;
+    border: 1px solid rgba(254,82,76, 1); /* Primary color, can be changed via colors.css */
+    background: rgba(254,82,76, 1); /* Primary color, can be changed via colors.css */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-custom-lg {
+    margin-top: 30px;
+    width: 20%;
+    min-width: 150px;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom-lg:hover,
+.btn-custom-lg:focus {
+    border: 1px solid #fff; /* Hover border color, can be changed via colors.css */
+    outline: 0;
+    color: #fff;
+    background: #df514c; /* Hover color, can be changed via colors.css */
+}
+
+
+.btn-outlined {
+    border: 1px solid rgba(9,113,178, 1); /* Secondary color, can be changed via colors.cs */
+    color: #fff;
+    background-color: rgba(9,113,178, 1); /* Secondary color, can be changed via colors.cs */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.btn-outlined:hover,
+.btn-outlined:focus{
+    border: 1px solid rgba(9,113,178, 1); /* Secondary color, can be changed via colors.cs */
+    color: rgba(9,113,178, 1); /* Secondary color, can be changed via colors.cs */
+    background: transparent;
+}
+
+
+.circle {
+    padding: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.squared {
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+
 /* Responsive Styles */
 
-@media(max-width:1200px) {
-    .headline h1 {
-        font-size: 140px;
+@media(min-width:768px) {
+    /*p {
+        margin: 0 0 35px;
+        font-size: 14px;
+        line-height: 1.6;
+    }*/
+
+    .navbar-custom {
+        margin-bottom: 0;
+        height: 55px;
+        text-transform: none;
+        border: none;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+           -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+                transition: background .5s ease-in-out, padding .5s ease-in-out;
+    }
+    .navbar-custom.top-nav-collapse {
+        background-color: #ede7e3;
+        opacity: 0.9;
+        border: none;
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+           -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+                transition: background .5s ease-in-out, padding .5s ease-in-out;
+/*        -webkit-box-shadow: 0 0 10px 2px rgba(0,0,0,.1);
+                box-shadow: 0 0 10px 2px rgba(0,0,0,.1);*/
+
     }
 
-    .headline h2 {
-        font-size: 63px;
-    }
-}
-
-@media(max-width:991px) {
-    .customer-img,
-    .img-related {
-        margin-bottom: 30px;
+    .navbar-custom.top-nav-collapse .navbar-brand{
+        color: #fff;
     }
 
-    .headline h1 {
-        font-size: 105px;
+    .navbar-custom.top-nav-collapse .button_container span{
+        background: #fff;
     }
 
-    .headline h2 {
-        font-size: 50px;
-    }
-}
-
-@media(max-width:768px) {
-    .img-portfolio {
-        margin-bottom: 15px;
-    }
-
-    header.carousel .carousel {
-        height: 70%;
-    }
-
-    .container {
-        margin: 0 15px;
-    }
-}
-
-@media(max-width:668px) {
-    .headline h1 {
-        font-size: 70px;
-    }
-
-    .headline h2 {
-        font-size: 32px;
+    .navbar-custom.top-nav-collapse .button_container.active span.top,
+    .navbar-custom.top-nav-collapse .button_container.active span.bottom{
+        background:#fff;
     }
 }
 
-@media(max-width:640px) {
+/* Media Queries [max-width:767px]
+/* ---------------------------------------------- */
+
+@media(max-width:767px) {
+
     h2 {
-        font-size: 30px;
+        font-size: 19px;
     }
 
     h4 {
-        font-size: 20px;
+        font-size: 14px;
     }
-}
 
-@media(max-width:375px) {
+    .caption{
+        font-weight: 100;
+        font-size: 14px;
+    }
+
+    .btn-custom, .btn-custom-lg {
+        color: #fff;
+        border: 1px solid rgba(254,82,76, 1); /* Primary color, can be changed via colors.css */
+        background: rgba(254,82,76, 1); /* Primary color, can be changed via colors.css */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .btn-custom-lg {
+        margin-top: 30px;
+        min-width: 100px;
+        font-size: 15px !important;
+    }
 }
