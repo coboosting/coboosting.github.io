@@ -435,3 +435,33 @@ header.carousel-caption {
         font-size: 15px !important;
     }
 }
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  color: white;
+  font-size: 12px;
+  line-height: 1.428;
+  background-color: #33B0DB; }
+  #footer .copyright {
+    padding: 5px 0; }
+
+blockquote {
+  border: solid 1px #ccc;
+  background-color: #f5f5f5;
+  margin: 20px 0;
+  padding: 20px;
+  width: 900px;
+  border-radius: 6px; }
+
+#index-introduce, #avatar-introduce {
+  background-color: #fcfcfc;
+  margin-top: 50px;
+  padding: 15px; }
+  #index-introduce p, #avatar-introduce p {
+    font-size: 14px;
+    color: #666;
+    margin: 0; }
