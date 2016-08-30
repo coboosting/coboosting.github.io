@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cn">
 
 <head>
 
@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>秭云科技，基于云+大数据+深度学习的健康医疗</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -18,7 +18,13 @@
     <link href="css/modern-business.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Plugin stylesheets -->
+    <link href="css/plugins/owl.carousel.css" rel="stylesheet">
+    <link href="css/plugins/owl.theme.css" rel="stylesheet">
+    <link href="css/plugins/owl.transitions.css" rel="stylesheet">
+    <link href="css/plugins/jquery.fullpage.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,84 +38,40 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-custom navbar-fixed-top navbar-default" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ziyun-navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+                <a href="index.html">
+                 <span class="brand-logo"><img src="assets/images/logo_big_font_b.png" onerror="this.src='assets/images/logo_big_font_b.png'; this.onerror=null;" alt="秭云科技" title="秭云科技" class="img-responsive"></span>
+                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="ziyun-navbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="services.html">Services</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
+                    <li class="active"><a>我们</a></li>
+                    <li><a href="services.html">解决方案</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">其他产品 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
+                                <a href="education.html">大数据教育解决方案</a>
                             </li>
                             <li>
-                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-item.html">Single Portfolio Item</a>
+                                <a href="finance.html">大数据金融解决方案</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="blog-home-1.html">Blog Home 1</a>
-                            </li>
-                            <li>
-                                <a href="blog-home-2.html">Blog Home 2</a>
-                            </li>
-                            <li>
-                                <a href="blog-post.html">Blog Post</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="full-width.html">Full Width Page</a>
-                            </li>
-                            <li>
-                                <a href="sidebar.html">Sidebar Page</a>
-                            </li>
-                            <li>
-                                <a href="faq.html">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="404.html">404</a>
-                            </li>
-                            <li>
-                                <a href="pricing.html">Pricing Table</a>
-                            </li>
-                        </ul>
-                    </li>
+                    <li><a href="career.html">诚邀加入</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                    <li><a href="milestone.html">动态</a></li>
+                    <li><a href="en/index.html">EN</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -118,205 +80,302 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
+    <div id="fullpage">
+        <div class="section active">
 
-        <!-- Page Heading/Breadcrumbs -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">About
-                    <small>Subheading</small>
-                </h1>
-                <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a>
-                    </li>
-                    <li class="active">About</li>
-                </ol>
-            </div>
         </div>
-        <!-- /.row -->
 
-        <!-- Intro Content -->
-        <div class="row">
-            <div class="col-md-6">
-                <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-            </div>
-            <div class="col-md-6">
-                <h2>About Modern Business</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, magni, aperiam vitae illum voluptatum aut sequi impedit non velit ab ea pariatur sint quidem corporis eveniet. Odit, temporibus reprehenderit dolorum!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis?</p>
-            </div>
-        </div>
-        <!-- /.row -->
+        <!-- <section id="about" class="about content-section full-height"> -->
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <!-- Display image -->
+                        <img src="assets/images/ziyun_ecosystem.png" class="featurette-image center-block img-responsive img-shadow img-rounded">
+                    </div>
 
-        <!-- Team Members -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Our Team</h2>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="thumbnail">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <div class="caption">
-                        <h3>John Smith<br>
-                            <small>Job Title</small>
-                        </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
-                        <ul class="list-inline">
-                            <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="thumbnail">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <div class="caption">
-                        <h3>John Smith<br>
-                            <small>Job Title</small>
-                        </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
-                        <ul class="list-inline">
-                            <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="thumbnail">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <div class="caption">
-                        <h3>John Smith<br>
-                            <small>Job Title</small>
-                        </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
-                        <ul class="list-inline">
-                            <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="thumbnail">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <div class="caption">
-                        <h3>John Smith<br>
-                            <small>Job Title</small>
-                        </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
-                        <ul class="list-inline">
-                            <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="thumbnail">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <div class="caption">
-                        <h3>John Smith<br>
-                            <small>Job Title</small>
-                        </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
-                        <ul class="list-inline">
-                            <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="thumbnail">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <div class="caption">
-                        <h3>John Smith<br>
-                            <small>Job Title</small>
-                        </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
-                        <ul class="list-inline">
-                            <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /.row -->
+                    <div class="col-sm-5">
+                        <h2>医疗健康生态体系</h2>
+                        <h4 class="text-muted">应用行业顶尖的大数据分析和人工智能技术，融合各方数据，提炼经验和智慧，共同打造包含医疗，体检，保险，设备，和社区的生态系统</h4>
+                        <br>
 
-        <!-- Our Customers -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Our Customers</h2>
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
-            </div>
-        </div>
-        <!-- /.row -->
+                        <h7 class="text-muted">
+                        <ul><li>分级诊疗，优化医疗资源分配与管理</li></ul>
+                        </h7>
 
-        <hr>
+                        <h7 class="text-muted">
+                        <ul><li>临床辅助，提高基层医生的诊疗效率</li></ul>
+                        </h7>
+
+                        <h7 class="text-muted">
+                        <ul><li>健康监控，利用可穿戴健康设备评估健康</li></ul>
+                        </h7>
+
+                        <h7 class="text-muted">
+                        <ul><li>慢病管理，降低医疗成本</li></ul>
+                        </h7>
+
+                        <h7 class="text-muted">
+                        <ul><li>病后干预，推动商业医保的普及</li></ul>
+                        </h7>
+                    </div>
+
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </div><!-- /.section -->
+
+        <!-- <section id="about" class="about content-section full-height alt-bg-light"> -->
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h2>云+大数据+深度学习</h2>
+                        <h4 class="text-muted">以互联网的思维来理解医疗健康</h4>
+                        <br>
+
+                        <h7 class="text-muted">
+                        <ul><li>基于Docker技术的CaaS云平台，弹性搭建，私有云部署</li></ul>
+                        </h7>
+
+                        <h7 class="text-muted">
+                        <ul><li>提供大数据批处理，流处理，和交互式处理引擎，深度挖掘数据中的智慧</li></ul>
+                        </h7>
+
+                        <h7 class="text-muted">
+                        <ul><li>应用深度学习技术，从体征，诊疗，甚至基因数据中训练机器学习模型，从而提高诊断效率和精度</li></ul>
+                        </h7>
+                    </div>
+                    <div class="col-sm-8">
+                        <!-- Display image -->
+                        <img src="assets/images/ziyun_coretech.png" class="center-block img-responsive">
+                    </div>
+
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </div><!-- /.section -->
+
+        <!-- <section id="technology" class="content-section full-height"> -->
+        <div class="section">
+            <div class="container">
+                <div class="col-lg-12 text-center">
+                    <h2>核心技术</h2>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="panel panel-default panel-shadow">
+                            <div class="panel-heading">
+                                <img class="center-block img-responsive" src="assets/images/heartbeat.png">
+                            </div>
+                            <div class="panel-body fixed-panel text-center">
+                                <h4>DeepECG<sup>&reg;</sup></h4>
+                                <p class="text-muted">基于深度学习的心电图分析算法，适合心律不齐和心脏疾病自动分析</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-default panel-shadow">
+                            <div class="panel-heading">
+                                <img class="center-block img-responsive" src="assets/images/xray.png">
+                            </div>
+                            <div class="panel-body fixed-panel text-center">
+                                <h4>DeepMI<sup>&reg;</sup></h4>
+                                <p class="text-muted">基于深度学习的医疗影像分类和识别算法，适合CT, MRT, 以及X-Ray的疾病应用分析</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="panel panel-default panel-shadow">
+                            <div class="panel-heading">
+                                <img class="center-block img-responsive" src="assets/images/emr.png">
+                            </div>
+                            <div class="panel-body fixed-panel text-center">
+                                <h4>DeepEMR<sup>&reg;</sup></h4>
+                                <p class="text-muted">基于深度学习的医疗电子记录分析算法，适合文本信息的疾病应用分析</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 text-center">
+                        <p><a class="text-danger" href="technology.html">更多技术 <i class="fa fa-lg fa-angle-right"></i></a></p>
+                    </div>
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </div><!-- /.section -->
+
+        <!-- <section id="services" class="services content-section full-height alt-bg-light"> -->
+        <div class="section">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 text-center">
+                        <h2>产品与服务</h2>
+                    </div>
+
+                    <hr class="featurette-divider">
+
+                    <div class="col-md-4">
+                        <div class="panel panel-warning panel-shadow">
+                            <div class="panel-heading">
+                                <img class="center-block img-responsive" src="assets/images/lab.png">
+                            </div>
+                            <div class="panel-body fixed-panel text-center">
+                                <h4>秭云大数据实训实验室</h4>
+                                <p class="text-muted">基于秭云CaaS云平台<sup>&reg;</sup>和秭云大数据云引擎<sup>&reg;</sup>搭建的大数据实训平台，并配以秭云大数据理论和商务课程以及秭云教学云模块。基于该平台老师和学生可以实践操作和体会大数据云平台整个的数据接入、存储、数据清洗、数据分析、可视化显示等环节</p>
+                            </div>
+                            <div class="panel-body text-center">
+                            <a href="education.html" class="btn btn-default">了解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-warning panel-shadow">
+                            <div class="panel-heading">
+                                <img class="center-block img-responsive" src="assets/images/ecg_device.png">
+                            </div>
+                            <div class="panel-body fixed-panel text-center">
+                                <h4>秭云心电图可穿戴设备</h4>
+                                <p class="text-muted">利用部署在秭云CaaS云平台<sup>&reg;</sup>上的DeepECG<sup>&reg;</sup>算法来分析通过可穿戴设备上采集来的实时单导联心电图数据，健康评估信息通过配套的手机App实时显示给用户</p>
+                            </div>
+                            <div class="panel-body text-center">
+                            <a href="educationz.html" class="btn btn-default">了解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-warning panel-shadow">
+                            <div class="panel-heading">
+                                <img class="center-block img-responsive" src="assets/images/doctor.png">
+                            </div>
+                            <div class="panel-body fixed-panel text-center">
+                                <h4>秭云智能分级诊疗系统</h4>
+                                <p class="text-muted">利用部署在秭云CaaS云平台<sup>&reg;</sup>上的秭云健康医疗云算法<sup>&reg;</sup>，自动对病人上传的人体生命体征数据和其它医疗数据进行有无疾病的筛选过滤；同时对病例进行疾病严重程度分类，指导医生进行分级诊疗，从而达到优化医疗资源的目的</p>
+                            </div>
+                            <div class="panel-body text-center">
+                            <a href="#" class="btn btn-default disabled">Coming soon</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 text-center">
+                        <p><a class="text-danger" href="services.html">全部产品和服务 <i class="fa fa-lg fa-angle-right"></i></a></p>
+                    </div>
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </div><!-- /.section -->
+
+        <!-- <section id="clients" class="content-section"> -->
+        <div class="section content-section fp-auto-height">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>合作伙伴</h2>
+                    </div><!-- /.col-md-12 -->
+
+                    <hr class="featurette-divider">
+
+                    <div class="panel-carousel owl-carousel owl-theme text-center">
+                        <div class="item carousel-item">
+                            <img class="center-block img-responsive" src="assets/images/zte_logo.png">
+                        </div>
+
+                        <div class="item carousel-item">
+                            <img class="center-block img-responsive" src="assets/images/oymotion_logo.png">
+                        </div>
+
+                        <div class="item carousel-item">
+                            <img class="center-block img-responsive" src="assets/images/jseti_logo.png">
+                        </div>
+
+                        <div class="item carousel-item">
+                            <img class="center-block img-responsive" src="assets/images/hmst_logo.png">
+                        </div>
+                    </div>
+
+                    <div class="carousel-navigation text-center">
+                        <a class="btn-prev">
+                            <span class="fa-stack fa-2x text-muted">
+                                  <i class="fa fa-circle fa-stack-2x"></i>
+                                  <i class="fa fa-angle-left fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+
+                        <a class="btn-next">
+                            <span class="fa-stack fa-2x">
+                                  <i class="fa fa-circle fa-stack-2x"></i>
+                                  <i class="fa fa-angle-right fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </div><!-- /.section -->
 
         <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-        </footer>
+        <div class="section content-section fp-auto-height">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="#">
+                            <span class="brand-logo"><img src="assets/images/logo_small_font_w.png" onerror="this.src='assets/images/logo_small_font_w.png'; this.onerror=null;" alt="秭云科技" title="秭云科技" class="img-responsive">
+                            </span>
+                        </a>
+                    </div>
 
-    </div>
-    <!-- /.container -->
+                    <br class="featurette-divider">
+
+                <!-- <div class="row" style="color:#dddddd;"> -->
+                    <div class="col-md-6" style="color:#dddddd;">
+                        <!-- <p>秭云科技将大数据技术和深度学习算法带入健康医疗领域。我们的目标是打造一个从
+                        用户，终端，再到医院等领域的端到端的良性生态系统。借此，秭云希望能将您的看病问诊
+                        从被动变为主动，让您能永远保持健康。</p> -->
+                        <p>Copyright &copy; 秭云科技 2016</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p><a href="about.html">关于我们</a></p>
+                        <p><a href="services.html">解决方案</a></p>
+                        <p><a href=#>其它产品</a></p>
+                        <p><a href="career.html">诚邀加入</a></p>
+                        <p><a href="contact.html">联系我们</a></p>
+                        <p><a href="blog.html">博客</a></p>
+                    </div>
+                    <div class="col-md-3" style="color:white">
+                        <p><i class="fa fa-envelope fa-lg"></i>&nbsp;&nbsp;<a href="mailto:support@coboosting.com">support@coboosting.com</a></p>
+                        <p><i class="fa fa-wechat fa-lg"></i>&nbsp;&nbsp;微信</p>
+                        <p><i class="fa fa-weibo fa-lg"></i>&nbsp;&nbsp;微博</p>
+                        <p><i class="fa fa-facebook-square fa-lg"></i>&nbsp;&nbsp;Facebook</p>
+                        <p><i class="fa fa-github-square fa-lg"></i>&nbsp;&nbsp;Github</p>
+                    </div>
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </div><!-- /.section -->
+
+        <div class="section fp-auto-height fp-disabled">
+        </div>
+    </div><!-- /.fullpage -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
+    <!-- Plugins JavaScripts -->
+    <script src="js/plugins/owl.carousel.min.js"></script>
+    <script src="js/plugins/jquery.fullpage.min.js"></script>
+
+    <!-- Ziyun JavaScript -->
+    <script src="js/ziyun.js"></script>
+
+    <script>
+      $('#fullpage').fullpage({
+          navigation: true,
+          sectionsColor: ['#ede7e3', '#ede7e3', '#ede7e3', '#ede7e3', '#ede7e3', 'white', '#5f5f5f', '#5f5f5f'],
+      });
+    </script>
 </body>
 
 </html>
