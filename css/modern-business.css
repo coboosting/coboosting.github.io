@@ -465,3 +465,10 @@ blockquote {
     font-size: 14px;
     color: #666;
     margin: 0; }
+
+#cg-container {width: 100%;}
+#left-content {float: left; margin-left: 60px; width: 30%;}
+#right-graph {float: right; width: 60%;}
+#cg-container .triple-left {float: left; width: 33%;}
+#cg-container .triple-center {float: left; width: 33%;}
+#cg-container .triple-right {float: left; width: 33%;}
