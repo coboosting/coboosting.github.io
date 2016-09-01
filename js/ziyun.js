@@ -18,7 +18,7 @@ $(window).scroll(function() {
 $(function() {
     $('.carousel').carousel({
         interval: 5000 //changes the speed
-    })
+    });
 });
 
 // Panel Carousel
@@ -47,16 +47,15 @@ $(function() {
 
 });
 
-// jQuery Parallax. More info here-> https://github.com/IanLunn/jQuery-Parallax
+// jQuery mobile
 $(function() {
-    // apply parallax effect only when body has the ".parallax-page" class
-    if ($('body').hasClass('parallax-page')) {
-        //.parallax(xPosition, speedFactor, outerHeight) options:
-        //xPosition - Horizontal position of the element
-        //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
-        //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+    //Enable swiping...
+    $("#myCarousel").swiperight(function() {
+        $(this).carousel('prev');
+    });
 
-        $('#parallax-slide').parallax("50%", 0.1);
-        $('#clients').parallax("50%", 0.1);
-    }
+    $("#myCarousel").swipeleft(function() {
+        $(this).carousel('next');
+    });
 });
+
