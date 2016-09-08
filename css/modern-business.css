@@ -481,8 +481,8 @@ header.carousel .carousel-inner .overlay-detail {
     }
 
 }
-/*
-#footer {
+
+#footer-small {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -492,7 +492,7 @@ header.carousel .carousel-inner .overlay-detail {
   font-size: 12px;
   line-height: 1.428;
   background-color: #33B0DB; }
-  #footer .copyright {
+  #footer-small .copyright {
     padding: 5px 0; }
 
 blockquote {
@@ -511,8 +511,7 @@ blockquote {
     font-size: 14px;
     color: #666;
     margin: 0; }
-<<<<<<< HEAD
-*/
+
 
 /*      Team section
 /* ---------------------------------------------- */
