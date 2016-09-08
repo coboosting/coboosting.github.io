@@ -26,11 +26,11 @@ figure {
 }
 
 .lightblack{
-    color: #777777;
+    color: #888888;
 }
 
 .gray{
-    color: #a5a5a5;
+    color: #b5b5b5;
 }
 
 .red{
@@ -73,16 +73,35 @@ figure {
 }
 
 /* Link Effects */
+.navbar .collapse ul li ul li.active > a {
+    color: white !important;
+    text-decoration: none !important;
+    background-color: rgba(254,82,76, 0.8) !important;
+}
+
+.navbar .collapse ul li ul li.disabled > a:hover {
+    color: #eeeeee !important;
+    text-decoration: none !important;
+    background-color: rgba(0,0,0, 0.5) !important;
+}
+
+.navbar .collapse ul li ul li > a:hover {
+    color: white !important;
+    text-decoration: none !important;
+    background-color: rgba(254,82,76, 0.8) !important;
+}
+
 .navbar .collapse li.active > a {
     color: white !important;
     text-decoration: none !important;
-    background-color: rgba(254,82,76, 1) !important;
+    background-color: rgba(254,82,76, 0.8) !important;
 }
+
 
 .navbar .collapse a:hover {
     color: #eeeeee !important;
     text-decoration: none !important;
-    background-color: rgba(254,82,76, 1) !important; /* Red */
+    background-color: rgba(254,82,76, 0.8) !important; /* Red */
 }
 
 .navbar .collapse a {
@@ -141,6 +160,18 @@ header.carousel .carousel-caption {
     bottom: initial;
 }
 
+.vertical {
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    /*max-width: 80%;*/
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+}
+
 header.carousel .carousel-indicators li.active {
     background-color: rgba(254,82,76, 1)
 }
@@ -185,14 +216,14 @@ header.carousel .carousel-inner .overlay-detail {
 /* ---------------------------------------------- */
 
 .container { margin: auto !important; }
-@media screen and (min-width: 1201px) { .container { /* 4 */ width: 1360px; } }
+@media screen and (min-width: 1201px) { .container { width: 1360px; } }
 @media screen and (max-width: 1400px) { .container { width: 1160px; } }
 @media screen and (max-width: 1200px) { .container { width: 952px; } }
 @media screen and (max-width: 992px) { .container { width: 768px; } }
-@media screen and (max-width: 768px) { .container { width: 100%; } }
+ .container { width: 100%; } }
 
-.container.container-to-lg { max-width: 1160px; }
-.container.container-to-md { max-width: 952px; }
+.container.container-to-lg { max-width: 1360px; }
+.container.container-to-md { max-width: 1160px; }
 .container.container-to-sm { max-width: 768px; }
 .container.container-to-xs { max-width: 440px; }
 
@@ -200,7 +231,8 @@ header.carousel .carousel-inner .overlay-detail {
 .container:after, .clearfix:after { clear: both; }
 
 .content-section {
-    padding: 100px 0;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     overflow: hidden;
     align-items: center;
     font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -212,7 +244,8 @@ header.carousel .carousel-inner .overlay-detail {
 
 .content-section.alt-bg-light{
     /*background-color: #ede7e3;*/
-    background-color: rgba(250, 250, 250, 1.0);
+    /*background-color: rgba(250, 250, 250, 1.0);*/
+    background-color: #f7f5f2;
     border-top:1px solid #f5f5f5;
     border-bottom:1px solid #f5f5f5;
 }
@@ -221,6 +254,46 @@ header.carousel .carousel-inner .overlay-detail {
     background-color: rgba(0, 0, 0, 0.7);
     border: none;
 }
+
+.content-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flex-item {
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 2rem;
+}
+
+.flex-left { margin-left: 0; }
+
+.flex-right { margin-right: 0; }
+
+.flex-centered {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.flex-reverse { flex-direction: row-reverse; }
 
 /* 4:   Navigation
 /* ---------------------------------------------- */
@@ -288,8 +361,13 @@ header.carousel .carousel-inner .overlay-detail {
     width: 100px;
     background-color: #999;
     border: 0 none;
-    margin-top: 0;
-    margin-bottom: 80px;
+/*    margin-top: 0;
+    margin-bottom: 80px;*/
+}
+
+.invisible {
+    opacity: 0;
+    border: none;
 }
 
 .featurette-image {
@@ -423,98 +501,7 @@ header.carousel .carousel-inner .overlay-detail {
     height: 60px;
 }
 
-
-/* Responsive Styles */
-
-@media(min-width:768px) {
-    /*p {
-        margin: 0 0 35px;
-        font-size: 14px;
-        line-height: 1.6;
-    }*/
-    #ziyun-navbar {
-      background: transparent;
-    }
-}
-
-/* Media Queries [max-width:767px]
-/* ---------------------------------------------- */
-
-@media(max-width:767px) {
-
-    h2 {
-        font-size: 19px;
-    }
-
-    h4 {
-        font-size: 14px;
-    }
-
-    #ziyun-navbar {
-      background-color: rgba(0, 0, 0, 0.7);
-    }
-
-    .caption{
-        font-size: 14px;
-    }
-
-    .bio{;
-        font-size: 12px;
-    }
-
-    .content-section.full-height {
-        height: auto;
-    }
-
-    .btn-custom, .btn-custom-lg {
-        color: #fff;
-        border: 1px solid rgba(254,82,76, 1); /* Primary color, can be changed via colors.css */
-        background: rgba(254,82,76, 1); /* Primary color, can be changed via colors.css */
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        font-size: 11px !important;
-    }
-
-    .btn-custom-lg {
-        margin-top: 30px;
-        min-width: 100px;
-        font-size: 13px !important;
-    }
-
-}
-/*
-#footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 100;
-  width: 100%;
-  color: white;
-  font-size: 12px;
-  line-height: 1.428;
-  background-color: #33B0DB; }
-  #footer .copyright {
-    padding: 5px 0; }
-
-blockquote {
-  border: solid 1px #ccc;
-  background-color: #f5f5f5;
-  margin: 20px 0;
-  padding: 20px;
-  width: 900px;
-  border-radius: 6px; }
-
-#index-introduce, #avatar-introduce {
-  background-color: #fcfcfc;
-  margin-top: 50px;
-  padding: 15px; }
-  #index-introduce p, #avatar-introduce p {
-    font-size: 14px;
-    color: #666;
-    margin: 0; }
-<<<<<<< HEAD
-*/
-
-/*      Team section
+/*      Footer
 /* ---------------------------------------------- */
 .footer-ext {
     margin-bottom: 30px
@@ -540,29 +527,6 @@ blockquote {
     background-position: center;
     background-size: cover;
 }
-
-
-/*.team-member figcaption ul{
-    list-style: none;
-}
-
-.team-member figcaption ul{
-    visibility: visible;
-    -webkit-transition: all 0.1s ease-in-out;
-       -moz-transition: all 0.1s ease-in-out;
-         -o-transition: all 0.1s ease-in-out;
-            transition: all 0.1s ease-in-out;
-}
-
-.team-member figcaption ul li{
-    display: inline-block;
-    padding:10px;
-}*/
-
-/*.team-member p {
-    margin: 20px 0 0;
-    padding: 0;
-}*/
 
 .team-member i:hover {
     color: rgba(254,82,76, 1);
@@ -606,9 +570,116 @@ blockquote {
             transition: all 0.4s ease-in-out;
 }
 
+/*
+/* Dimension
+/* ---------------------------------------------- */
+
 #cg-container {width: 100%;}
 #left-content {float: left; margin-left: 60px; width: 30%;}
 #right-graph {float: right; width: 60%;}
 #cg-container .triple-left {float: left; width: 33%;}
 #cg-container .triple-center {float: left; width: 33%;}
 #cg-container .triple-right {float: left; width: 33%;}
+
+/*
+/* Padding
+/* ---------------------------------------------- */
+.py1 { padding-top: 1rem; padding-bottom: 1rem; }
+.py4 { padding-top: 4rem; padding-bottom: 4rem; }
+.pyb4 { padding-bottom: 4rem; }
+.px4 { padding-left: 8rem; padding-right: 8rem; }
+
+/*
+/* Font
+/* ---------------------------------------------- */
+
+h4, .h4 {
+    font-size: 20px;
+}
+
+/*      Responsive Style
+/* ---------------------------------------------- */
+
+@media(min-width:768px) {
+    /*p {
+        margin: 0 0 35px;
+        font-size: 14px;
+        line-height: 1.6;
+    }*/
+    #ziyun-navbar {
+      background: transparent;
+    }
+
+/*    ._1-3 { width: 33.3333%; }
+    ._2-3 { width: 66.6667%; }*/
+}
+
+/* Media Queries [max-width:767px]
+/* ---------------------------------------------- */
+
+@media(max-width:767px) {
+
+    h2, .h2 {
+        font-size: 20px;
+    }
+
+    h3, .h3 {
+        font-size: 18px;
+    }
+
+    h4, .h4 {
+        font-size: 16px;
+    }
+
+    h5, .h5 {
+        font-size: 12px;
+    }
+
+    .py1 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+    .py4 { padding-top: 2rem; padding-bottom: 2rem; }
+    .pyb4 { padding-bottom: 2rem; }
+    .px4 { padding-left: 2rem; padding-right: 2rem; }
+
+    #ziyun-navbar {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .caption{
+        font-size: 14px;
+    }
+
+    .bio{;
+        font-size: 12px;
+    }
+
+    .content-section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .content-section.full-height {
+        height: auto;
+    }
+
+    .flex-stackable { display: block; }
+
+    .flex-item { padding-top: 0.5rem; padding-bottom: 0.5rem }
+
+    .btn-custom, .btn-custom-lg {
+        color: #fff;
+        border: 1px solid rgba(254,82,76, 1); /* Primary color, can be changed via colors.css */
+        background: rgba(254,82,76, 1); /* Primary color, can be changed via colors.css */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        font-size: 11px !important;
+    }
+
+    .btn-custom-lg {
+        margin-top: 30px;
+        min-width: 100px;
+        font-size: 13px !important;
+    }
+
+    /* Dimensions */
+    ._100-width-sm { width: 100%; }
+    ._50-widht-sm { width: 50%; }
+}
