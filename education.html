@@ -39,7 +39,7 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top navbar-default" role="navigation">
-        <div class="container">
+        <div class="container container-to-lg">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ziyun-navbar">
@@ -49,18 +49,36 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a href="index.html">
-                 <span class="brand-logo"><img src="assets/images/logo_big_font_b.png" onerror="this.src='assets/images/logo_big_font_b.png'; this.onerror=null;" alt="秭云科技" title="秭云科技" class="img-responsive"></span>
+                 <span class="brand-logo"><img src="assets/images/logo_big_font_w.png" onerror="this.src='assets/images/logo_big_font_w.png'; this.onerror=null;" alt="秭云科技" title="秭云科技" class="img-responsive"></span>
                  </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="ziyun-navbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="about.html">我们</a></li>
-                    <li><a href="services.html">解决方案</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">核心技术 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="bigdata.html">秭云大数据云平台&trade;</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#">DeepECG&trade;</a>
+                            </li>
+                            <li class="disabled">
+                                <a href="#">DeepMI&trade; (Coming Soon)</a>
+                            </li>
+                            <li class="disabled">
+                                <a href="#">DeepEMR&trade; (Coming Soon)</a>
+                            </li>
+                        </ul>
+                    </li>
+
                     <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">其他产品 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li>
+                            <li class="active">
                                 <a href="education.html">大数据教育解决方案</a>
                             </li>
                             <li class="disabled">
@@ -70,7 +88,7 @@
                     </li>
                     <li><a href="career.html">诚邀加入</a></li>
                     <li><a href="contact.html">联系我们</a></li>
-                    <li><a href="milestone.html">动态</a></li>
+                    <li><a href="milestone.html">博客</a></li>
                     <li><a href="en/index.html">EN</a></li>
                 </ul>
             </div>
