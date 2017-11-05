@@ -48,29 +48,30 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="index.html">
+                <a href="#">
                  <span class="brand-logo"><img src="assets/images/logo_big_font_w.png" onerror="this.src='assets/images/logo_big_font_w.png'; this.onerror=null;" alt="秭云科技" title="秭云科技" class="img-responsive"></span>
                  </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="ziyun-navbar">
                 <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">主页</a></li>
                     <li><a href="about.html">我们</a></li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">核心技术 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="#">秭云大数据云平台&trade;</a>
+                                <a href="bigdata.html">秭云大数据云平台&trade;</a>
                             </li>
                             <li role="separator" class="divider"></li>
                             <li>
-                                <a href="#">DeepECG&trade;</a>
+                                <a href="deepecg.html">DeepECG&trade;</a>
                             </li>
                             <li class="disabled">
-                                <a href="#">DeepMI&trade;</a>
+                                <a href="#">DeepMI&trade; (Coming Soon)</a>
                             </li>
                             <li class="disabled">
-                                <a href="#">DeepEMR&trade;</a>
+                                <a href="#">DeepEMR&trade; (Coming Soon)</a>
                             </li>
                         </ul>
                     </li>
@@ -81,14 +82,12 @@
                             <li>
                                 <a href="education.html">大数据教育解决方案</a>
                             </li>
-                            <li class="disabled">
-                                <a href="#">大数据金融解决方案</a>
+                            <li>
+                                <a href="finance.html">大数据金融解决方案</a>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="career.html">诚邀加入</a></li>
-                    <li><a href="contact.html">联系我们</a></li>
-                    <li><a href="milestone.html">博客</a></li>
+                    <li class="disabled"><a href="#">博客</a></li>
                     <li><a href="en/index.html">EN</a></li>
                 </ul>
             </div>
@@ -116,7 +115,7 @@
                     <div class="carousel-caption">
                         <h2>智能分级诊疗，优化医疗资源</h2>
                         <h4>基于人体体特数据和医疗数据的病情筛选和健康评估，帮助医院进行病情分流和分级诊疗</h4>
-                        <h4><a href="#" class="btn btn-custom-lg btn-lg">了解更多</a></h4>
+                        <h4><a href="deepecg.html" class="btn btn-custom-lg btn-shadow btn-lg">了解更多</a></h4>
                     </div>
                     <div class="overlay-detail"></div>
                 </div>
@@ -125,7 +124,7 @@
                     <div class="carousel-caption">
                         <h2>慢性病全程管理，降低医疗成本</h2>
                         <h4>基于大数据模型的慢性病监控与预测，帮助病友全程掌控自己的病情，让看病从被动变为主动</h4>
-                        <a href="#" class="btn btn-custom-lg btn-lg">了解更多</a>
+                        <a disabled='true' class="btn btn-custom-lg btn-shadow btn-lg">Coming Soon</a>
                     </div>
                     <div class="overlay-detail"></div>
                 </div>
@@ -133,8 +132,8 @@
                     <div class="fill" style="background-image:url('assets/images/medical_cloud.jpg');"></div>
                     <div class="carousel-caption">
                         <h2>大数据云平台，数据即服务</h2>
-                        <h4>秭云CaaS云平台<SUP>&reg</SUP>+大数据引擎<sup>&reg</sup>，私有化部署，适合于教育，医疗等领域</h4>
-                        <a href="#" class="btn btn-custom-lg btn-lg">了解更多</a>
+                        <h4>秭云CaaS云平台<SUP>&trade;</SUP>+大数据引擎<sup>&trade;</sup>，私有化部署，适合于教育，医疗等领域</h4>
+                        <a href="bigdata.html" class="btn btn-custom-lg btn-shadow btn-lg">了解更多</a>
                     </div>
                     <div class="overlay-detail"></div>
                 </div>
@@ -143,7 +142,7 @@
                     <div class="carousel-caption">
                         <h2>用户到医生的端到端连接，实时健康监控</h2>
                         <h4>通过可穿戴医疗设备和智能手机，数据实时分析预测，异常直接发送给加盟医院</h4>
-                        <a href="#" class="btn btn-custom-lg btn-lg">了解更多</a>
+                        <a href="deepecg.html" class="btn btn-custom-lg btn-shadow btn-lg">了解更多</a>
                     </div>
                     <div class="overlay-detail"></div>
                 </div>
@@ -158,84 +157,110 @@
             </a>
         </header>
 
-        <section class="content-section full-height">
+        <section class="content-section">
         <!-- <div class="section"> -->
             <div class="container container-to-md">
-                <div class="row">
-                    <div class="col-sm-8">
+                <div class="col-md-12 text-center pyb4">
+                    <h2>健康医疗生态系统</h2>
+                    <h3 class="gray">打造包含医疗、体检、设备商、保险、以及社区的生态系统</h3>
+                    <hr class="featurette-divider">
+                </div>
+                <hr class="featurette-divider invisible">
+
+                <article class="content-container flex-centered flex-stackable">
+
+                    <div class="flex-item _100-width-sm">
                         <!-- Display image -->
-                        <img src="assets/images/ziyun_ecosystem.png" class="featurette-image center-block img-responsive img-shadow img-rounded">
+                        <img src="assets/images/ziyun_ecosystem.png" class="center-block img-responsive">
                     </div>
 
-                    <div class="col-sm-4">
-                        <h2>医疗健康生态体系</h2>
-                        <h4 class="text-muted">应用行业顶尖的大数据分析和人工智能技术，融合各方数据，提炼经验和智慧，共同打造包含医疗，体检，保险，设备，和社区的生态系统</h4>
-                        <br>
-
-                        <h7 class="text-muted">
-                        <ul><li>分级诊疗，优化医疗资源分配与管理</li></ul>
-                        </h7>
-
-                        <h7 class="text-muted">
-                        <ul><li>临床辅助，提高基层医生的诊疗效率</li></ul>
-                        </h7>
-
-                        <h7 class="text-muted">
-                        <ul><li>健康监控，利用可穿戴健康设备评估健康</li></ul>
-                        </h7>
-
-                        <h7 class="text-muted">
-                        <ul><li>慢病管理，降低医疗成本</li></ul>
-                        </h7>
-
-                        <h7 class="text-muted">
-                        <ul><li>病后干预，推动商业医保的普及</li></ul>
-                        </h7>
+                    <div class="flex-item _100-width-sm gray">
+                        <dl>
+                        <dt class="h4 lightblack">行业顶尖的大数据分析和人工智能技术</dt>
+                        <dd class="h5 py1">
+                          <p>
+                            分级诊疗，优化医疗资源分配与管理。
+                          </p>
+                          <p>
+                            临床辅助，提高基层医生的诊疗效率。
+                          </p>
+                        </dd>
+                        <dt class="h4 lightblack">融合各方数据，提炼经验和智慧，打造生态系统</dt>
+                        <dd class="h5">
+                          <p>
+                            健康监控，利用可穿戴健康设备评估健康。
+                          </p>
+                          <p>
+                            慢病管理，降低医疗成本。
+                          </p>
+                          <p>
+                            病后干预，推动商业医保的普及。
+                          </p>
+                        </dd>
+                        </dl>
                     </div>
 
-                </div><!-- /.row -->
+                </article><!-- /.row -->
             </div><!-- /.container -->
         </section><!-- /.section -->
 
-        <section class="content-section full-height alt-bg-light">
+        <section class="content-section alt-bg-light">
         <!-- <div class="section"> -->
             <div class="container container-to-md">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <h2>云+大数据+深度学习</h2>
-                        <h4 class="text-muted">以互联网的思维来理解医疗健康</h4>
-                        <br>
+                <div class="col-md-12 text-center pyb4">
+                    <h2>云&nbsp;+&nbsp;大数据&nbsp;+&nbsp;深度学习</h2>
+                    <h3 class="gray">以互联网+人工智能的思维来创新健康医疗</h3>
+                    <hr class="featurette-divider">
+                </div>
+                <hr class="featurette-divider invisible">
 
-                        <h7 class="text-muted">
-                        <ul><li>基于Docker技术的CaaS云平台，弹性搭建，私有云部署</li></ul>
-                        </h7>
+                <article class="content-container flex-centered flex-stackable">
 
-                        <h7 class="text-muted">
-                        <ul><li>提供大数据批处理，流处理，和交互式处理引擎，深度挖掘数据中的智慧</li></ul>
-                        </h7>
-
-                        <h7 class="text-muted">
-                        <ul><li>应用深度学习技术，从体征，诊疗，甚至基因数据中训练机器学习模型，从而提高诊断效率和精度</li></ul>
-                        </h7>
+                    <div class="flex-item _100-width-sm _1-3 gray">
+                        <dl>
+                        <dt class="h4 lightblack">企业级CaaS云平台</dt>
+                        <dd class="h5 py1">
+                          <p>
+                            基于Docker技术的容器服务。
+                          </p>
+                          <p>
+                            弹性搭建，可部署于公有云和私有云。
+                          </p>
+                        </dd>
+                        <dt class="h4 lightblack">大数据分析和建模</dt>
+                        <dd class="h5">
+                          <p>
+                            配置大数据批处理，流处理，和交互式处理引擎。
+                          </p>
+                          <p>
+                            处理海量体征、诊疗、甚至基因数据。
+                          </p>
+                          <p>
+                            应用深度学习技术，提高诊断效率和精度。
+                          </p>
+                        </dd>
+                        </dl>
                     </div>
-                    <div class="col-sm-8">
+
+                    <div class="flex-item _100-width-sm _2-3">
                         <!-- Display image -->
-                        <img src="assets/images/ziyun_coretech.png" class="featurette-image center-block img-responsive">
+                        <img src="assets/images/ziyun_coretech.png" class="center-block img-responsive">
                     </div>
 
-                </div><!-- /.row -->
+                </article><!-- /.row -->
             </div><!-- /.container -->
         </section><!-- /.section -->
 
-        <section class="content-section full-height">
+        <section class="content-section">
         <!-- <div class="section fp-auto-height"> -->
             <div class="container container-to-md">
                 <div class="row">
-                    <div class="col-md-12 text-center">
+                    <div class="col-md-12 text-center pyb4">
                         <h2>核心技术</h2>
+                        <hr class="featurette-divider">
                     </div>
 
-                    <hr class="featurette-divider">
+
                     <div class="col-md-4">
                         <div class="panel panel-default panel-shadow">
                             <div class="panel-heading">
@@ -244,6 +269,9 @@
                             <div class="panel-body fixed-panel text-center">
                                 <h4>DeepECG<sup>&trade;</sup></h4>
                                 <p class="text-muted">基于深度学习的心电图分析算法，适合心律不齐和心脏疾病自动分析</p>
+                            </div>
+                            <div class="panel-body text-center">
+                            <a href="deepecg.html" class="btn btn-custom">了解更多</a>
                             </div>
                         </div>
                     </div>
@@ -255,6 +283,9 @@
                             <div class="panel-body fixed-panel text-center">
                                 <h4>DeepMI<sup>&trade;</sup></h4>
                                 <p class="text-muted">基于深度学习的医疗影像分类和识别算法，适合CT, MRT, 以及X-Ray的疾病应用分析</p>
+                            </div>
+                            <div class="panel-body text-center">
+                            <a href="#" class="btn btn-default disabled">即将推出</a>
                             </div>
                         </div>
                     </div>
@@ -268,12 +299,15 @@
                                 <h4>DeepEMR<sup>&trade;</sup></h4>
                                 <p class="text-muted">基于深度学习的医疗电子记录分析算法，适合文本信息的疾病应用分析</p>
                             </div>
+                            <div class="panel-body text-center">
+                            <a href="#" class="btn btn-default disabled">即将推出</a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-md-12 text-center">
+                    <!-- <div class="col-md-12 text-center">
                         <p><a class="link red" href="technology.html">更多技术 <i class="fa fa-lg fa-angle-right"></i></a></p>
-                    </div>
+                    </div> -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
         </section><!-- /.section -->
@@ -283,11 +317,10 @@
             <div class="container container-to-md">
                 <div class="row">
 
-                    <div class="col-md-12 text-center">
+                    <div class="col-md-12 text-center pyb4">
                         <h2>产品与服务</h2>
+                        <hr class="featurette-divider">
                     </div>
-
-                    <hr class="featurette-divider">
 
                     <div class="col-md-4">
                         <div class="panel panel-warning panel-shadow">
@@ -306,11 +339,11 @@
                     <div class="col-md-4">
                         <div class="panel panel-warning panel-shadow">
                             <div class="panel-heading">
-                                <img class="center-block img-responsive" src="assets/images/ecg_device.png">
+                                <img class="center-block img-responsive" src="assets/images/doctor.png">
                             </div>
                             <div class="panel-body fixed-panel text-center">
-                                <h4>秭云心电图可穿戴设备</h4>
-                                <p class="text-muted">利用部署在秭云CaaS云平台<sup>&trade;</sup>上的DeepECG<sup>&trade;</sup>算法来分析通过可穿戴设备上采集来的实时单导联心电图数据，健康评估信息通过配套的手机App实时显示给用户</p>
+                                <h4>秭云智能分级诊疗系统</h4>
+                                <p class="text-muted">利用部署在秭云CaaS云平台<sup>&trade;</sup>上的秭云健康医疗云算法<sup>&trade;</sup>，自动对病人上传的人体生命体征数据和其它医疗数据进行有无疾病的筛选过滤；同时对病例进行疾病严重程度分类，指导医生进行分级诊疗，从而达到优化医疗资源的目的</p>
                             </div>
                             <div class="panel-body text-center">
                             <a href="educationz.html" class="btn btn-custom">了解更多</a>
@@ -320,21 +353,21 @@
                     <div class="col-md-4">
                         <div class="panel panel-warning panel-shadow">
                             <div class="panel-heading">
-                                <img class="center-block img-responsive" src="assets/images/doctor.png">
+                                <img class="center-block img-responsive" src="assets/images/ecg_device.png">
                             </div>
                             <div class="panel-body fixed-panel text-center">
-                                <h4>秭云智能分级诊疗系统</h4>
-                                <p class="text-muted">利用部署在秭云CaaS云平台<sup>&trade;</sup>上的秭云健康医疗云算法<sup>&trade;</sup>，自动对病人上传的人体生命体征数据和其它医疗数据进行有无疾病的筛选过滤；同时对病例进行疾病严重程度分类，指导医生进行分级诊疗，从而达到优化医疗资源的目的</p>
+                                <h4>秭云心电图可穿戴设备</h4>
+                                <p class="text-muted">利用部署在秭云CaaS云平台<sup>&trade;</sup>上的DeepECG<sup>&trade;</sup>算法来分析通过可穿戴设备上采集来的实时单导联心电图数据，健康评估信息通过配套的手机App实时显示给用户</p>
                             </div>
                             <div class="panel-body text-center">
-                            <a href="#" class="btn btn-outlined disabled">即将推出</a>
+                            <a href="#" class="btn btn-default disabled">即将推出</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-12 text-center">
+                    <!-- <div class="col-md-12 text-center">
                         <p><a class="link red" href="services.html">全部产品和服务 <i class="fa fa-lg fa-angle-right"></i></a></p>
-                    </div>
+                    </div> -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
         </section><!-- /.section -->
@@ -343,11 +376,12 @@
         <!-- <div class="section"> -->
             <div class="container container-to-md">
                 <div class="row">
-                    <div class="col-md-12 text-center">
+                    <div class="col-md-12 text-center pyb4">
                         <h2>合作伙伴</h2>
+                        <hr class="featurette-divider">
                     </div><!-- /.col-md-12 -->
 
-                    <hr class="featurette-divider">
+
 
                     <div class="panel-carousel owl-carousel owl-theme text-center">
                         <div class="item carousel-item">
@@ -422,7 +456,7 @@
 
                     <div class="col-md-3">
                         <div class="footer-ext darkwhite">
-                        <p><i class="fa fa-envelope fa-lg"></i>&nbsp;&nbsp;<a href="mailto:support@coboosting.com">support@coboosting.com</a></p>
+                        <p><i class="fa fa-envelope fa-lg"></i>&nbsp;&nbsp;<a href="mailto:customer@ziyuncloud.com">customer@ziyuncloud.com</a></p>
                         <p><i class="fa fa-wechat fa-lg"></i>&nbsp;&nbsp;微信</p>
                         <p><i class="fa fa-weibo fa-lg"></i>&nbsp;&nbsp;微博</p>
                         <p><i class="fa fa-facebook-square fa-lg"></i>&nbsp;&nbsp;Facebook</p>

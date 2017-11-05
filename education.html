@@ -55,6 +55,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="ziyun-navbar">
                 <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">主页</a></li>
                     <li><a href="about.html">我们</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">核心技术 <b class="caret"></b></a>
@@ -64,7 +65,7 @@
                             </li>
                             <li role="separator" class="divider"></li>
                             <li>
-                                <a href="#">DeepECG&trade;</a>
+                                <a href="deepecg.html">DeepECG&trade;</a>
                             </li>
                             <li class="disabled">
                                 <a href="#">DeepMI&trade; (Coming Soon)</a>
@@ -79,16 +80,14 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">其他产品 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li class="active">
-                                <a href="education.html">大数据教育解决方案</a>
+                                <a href="#">大数据教育解决方案</a>
                             </li>
-                            <li class="disabled">
-                                <a href="#">大数据金融解决方案</a>
+                            <li>
+                                <a href="finance.html">大数据金融解决方案</a>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="career.html">诚邀加入</a></li>
-                    <li><a href="contact.html">联系我们</a></li>
-                    <li><a href="milestone.html">博客</a></li>
+                    <li class="disabled"><a href="#">博客</a></li>
                     <li><a href="en/index.html">EN</a></li>
                 </ul>
             </div>
@@ -98,67 +97,77 @@
     </nav>
 
     <!-- Page Content -->
-    <div id="fullpage">
-        <div class="section" style="background-image:url(assets/images/backgroud.png); background-repeat:no-repeat; background-size:cover;">
-            <div class="container">
-              <div class="section-content career-container">
-                <h1 style="color: #33B0DB" class="tab">&nbsp;&nbsp;&nbsp;&nbsp;博雅大数据教育平台<sup>&reg;</sup></h1>
-                <h2 style="color: #33B0DB" align="center">面向大数据教育的端到端解决方案</h2>
-                <h2><br></h2>
-                <div align="center"><img class="img-responsive" src="assets/images/end2end.png"  width="70%" alt=""></div>
+    <!-- <div id="fullpage"> -->
+        <div class="content-section full-height" style="background-image:url(assets/images/teacher.jpg); background-repeat:no-repeat; background-size:cover;">
+            <div class="container container-to-md"">
+              <div class="col-md-12 text-center py4">
+                  <h2>博雅大数据教育平台<sup>&reg;</sup></h2>
+                  <h3 class="lightblack">面向大数据教育的端到端解决方案</h3>
+                  <hr class="featurette-divider">
               </div>
-            </div>
-        </div>
-        <div class="section" style="background-image:url(assets/images/teacher.jpg); background-repeat:no-repeat; background-size:cover;">
-            <div class="container">
-                <div class="section-content career-container">
-                  <br>
-                  <h1><font color="white">面向大数据教育的内容体系</font></h1>
-                  <h3><font color="white">涵盖 大数据平台基础，大数据挖掘与分析， 大数据商业智能</font></h3>
-                  <br>
-                  <br>
-                  <div align="center"><img class="img-responsive" src="assets/images/big_data_classes.png"  width="60%" alt=""></div>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <div class="container">
-              <div class="section-content career-container">
-                  <h2 style="color: #33B0DB">博雅大数据教育平台<sup>&reg;</sup>体系层次</h2>
-                  <h2><br></h2>
-                  <div align="center"><img class="img-responsive" src="assets/images/arch.png"  width="60%" alt=""></div>
-                  <div class="section-content">
-                  <h1><br></h1>
+              <hr class="featurette-divider invisible">
+
+              <article class="content-container flex-centered flex-stackable">
+
+                  <div class="flex-item _100-width-sm">
+                      <img src="assets/images/end2end.png" class="center-block img-responsive">
                   </div>
-                      <div align="center"><blockquote id="index-introduce"><p><strong>博雅大数据教育平台</strong>采用最先进的<strong> CaaS</strong>（Container as a Service/容器即服务）技术。相对于IaaS和PaaS服务，CaaS对底层的支持比PaaS更灵活，而对上层应用的操控又比IaaS更容易。CaaS是以容器为核心的，它介于IaaS和PaaS之间，起到了屏蔽底层系统IaaS，支撑并丰富上层应用平台PaaS的作用。将底层的IaaS封装成一个大的资源池，我们只需要将应用部署到资源池中，不再需要关心资源的申请、管理，以及与业务开发无关的事情. <strong>CaaS</strong>基于<a href="http://www.docker.com/">Docker</a>构建弹性云，使得基于<a href="http://www.docker.com/">Docker</a>的服务便于快速构建与撤销。</p></div>
-              </blockquote>
-              </div>
-            </div>
+
+              </article><!-- /.row -->
+
+            </div><!-- /.container -->
         </div>
-        <div class="section section-mixed">
-            <div class="container">
-            <h1 align="center">产教结合  <font color="#707070" size="5px"><strong>  抓住商业热点</strong></font></h1>
-            <br><br>
+
+        <div class="content-section">
+            <div class="container container-to-md">
+              <div class="col-md-12 text-center py4">
+                  <h2>面向大数据教育的内容体系</h2>
+                  <h3 class="gray">涵盖大数据平台基础，大数据挖掘与分析，大数据商业智能</h3>
+                  <hr class="featurette-divider">
+              </div>
+              <hr class="featurette-divider invisible">
+
+              <article class="content-container flex-centered flex-stackable">
+
+                  <div class="flex-item _100-width-sm">
+                      <img src="assets/images/big_data_classes.png" class="center-block img-responsive">
+                  </div>
+
+              </article><!-- /.row -->
+
+            </div><!-- /.container -->
+        </div>
+
+        <div class="content-section">
+            <div class="container container-to-md">
+              <div class="col-md-12 text-center py4">
+                  <h2>产教结合</h2>
+                  <h3 class="gray">抓住商业热点</h3>
+                  <hr class="featurette-divider">
+              </div>
+              <hr class="featurette-divider invisible">
+
+
               <div class="row">
                   <div class="col-sm-6" align="center">
-                      <img src="assets/images/business4.png" width="25%" alt="">
+                      <img src="assets/images/business4.png" width="50%" alt="">
                       <div class="title"><font color="#333399" size="4px"><strong><br>客户行为分析</strong></font></div>
                       <br>
                       <div class="note"><font color="#333399">分析用户参与情况与活跃程度， 考查用户初始行为（注册）后,<br>有多少人会进行后续行为，也就是用户留存率.</font></div>
                       <br><br>
-                      <img src="assets/images/business2.png" width="25%" alt="">
+                      <img src="assets/images/business2.png" width="50%" alt="">
                       <br>
                       <div class="title"><font color="#333399" size="4px"><strong><br>订单漏斗分析</strong></font></div>
                       <br>
                       <div class="note"><font color="#333399">用户购买商品的流程包括浏览首页，浏览商品，下单<br>或者加入购物车， 支付，是否退货。订单漏斗分析一个多步骤<br>过程中每一步的转化与流失情况.</font></div>
                   </div>
                   <div class="col-sm-6" align="center">
-                      <img src="assets/images/business1.png" width="24%" alt="">
+                      <img src="assets/images/business1.png" width="50%" alt="">
                       <div class="title"><font color="#CC6600" size="4px"><strong><br>营销渠道分析</strong></font></div>
                       <br>
                       <div class="note"><font color="#CC6600">不论是电商还是O2O企业，都需要花费相当的人力、物力、财力<br>去获取新客户。每个产品面对的目标客户不尽相同， 最<br>合适的推广渠道也各不相同.</font></div>
                       <br><br>
-                      <img src="assets/images/business3.png" width="25%" alt="">
+                      <img src="assets/images/business3.png" width="50%" alt="">
                       <br>
                       <div class="title"><font color="#CC6600" size="4px"><strong><br>精准广告投放</strong></font></div>
                       <br>
@@ -167,42 +176,94 @@
               </div>
             </div>
         </div>
-        <div style="background-image:url(assets/images/backgroud.png); background-repeat:no-repeat; background-size:cover;" class="section">
-            <div class="container">
-              <div class="section-content career-container">
-                  <h2><font color="333399">订单漏斗分析</font></h2>
-                  <h3><font color="#3366CC">订单漏斗分析针对下单的多步骤过程，分析每一步的转化与流失情况</font></h3>
-                  <br><br><br><br>
-                  <div align="center"><img class="img-responsive" src="assets/images/funnel_analysis.png"  width="75%" alt=""></div>
-              </div>
-            </div>
+
+        <div class="content-section alt-bg-light">
+            <div class="container container-to-md">
+                  <div class="col-md-12 text-center py4">
+                      <h2>大数据管道流处理</h2>
+                      <h4 class="gray">拖拉式操作编写大数据处理任务，适合于教学任务</h4>
+                      <hr class="featurette-divider">
+                  </div>
+                  <hr class="featurette-divider invisible">
+
+                  <article class="content-container flex-centered flex-stackable">
+                      <div class="flex-item _100-width-sm">
+                          <img src="assets/images/streamset_dataflow.png" class="center-block img-responsive">
+                      </div>
+
+                  </article><!-- /.row -->
+
+            </div><!-- /.container -->
         </div>
-        <div style="background-image:url(assets/images/backgroud.png); background-repeat:no-repeat; background-size:cover;" class="section">
-            <div class="container">
-              <div class="section-content career-container">
-                  <h2><font color="#333399">回归建模分析</font></h2>
-                  <h3><font color="#3366CC">基于回归建模，优化整个供应链及库存管理，从而降低运营成本</font></h3>
-                  <br><br><br><br>
-                  <div align="center"><img class="img-responsive" src="assets/images/regression.png"  width="70%" alt=""></div>
-              </div>
-            </div>
+
+
+        <div class="content-section">
+            <div class="container container-to-md">
+                  <div class="col-md-12 text-center py4">
+                      <h2>商务数据情报分析与可视化</h2>
+                      <h4 class="gray">提供大数据切边分析和展示板搭建，适合于交互式大数据教学</h4>
+                      <hr class="featurette-divider">
+                  </div>
+                  <hr class="featurette-divider invisible">
+
+                  <article class="content-container flex-centered flex-stackable">
+                      <div class="flex-item _100-width-sm">
+                          <img src="assets/images/caravel_dashboard.png" class="center-block img-responsive">
+                      </div>
+
+                  </article><!-- /.row -->
+
+            </div><!-- /.container -->
         </div>
-        <div style="background-image:url(assets/images/backgroud.png); background-repeat:no-repeat; background-size:cover;" class="section">
-          <div class="container">
-            <div class="section-content career-container">
-                <h2><font color="333399">营销渠道分析</font></h2>
-                <h3><font color="#3366CC">每个产品面对的目标客户不尽相同， 最合适的推广渠道也各不相同</font></h3>
-                <br><br><br><br>
-                <div align="center"><img class="img-responsive" src="assets/images/distribution_outlets.png"  width="60%" alt=""></div>
-            </div>
-          </div>
-          <div id="footer-small">
-            <div class="text-center">
-              <div class="copyright">&copy; 2016 秭云科技版权所有 </div>
-            </div>
-          </div>
-        </div>
-    </div><!-- /.fullpage -->
+
+        <!-- Footer -->
+        <section id="footer" class="footer content-section alt-bg-dark">
+            <div class="container container-to-md">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="#">
+                            <span class="brand-logo"><img src="assets/images/logo_big_font_w.png" onerror="this.src='assets/images/logo_big_font_w.png'; this.onerror=null;" alt="秭云科技" title="秭云科技" class="img-responsive">
+                            </span>
+                        </a>
+                    </div>
+
+                    <br class="featurette-divider">
+
+                    <div class="col-md-6">
+                        <div class="footer-ext darkwhite">
+                        <!-- <p>秭云科技将大数据技术和深度学习算法带入健康医疗领域。我们的目标是打造一个从
+                        用户，终端，再到医院等领域的端到端的良性生态系统。借此，秭云希望能将您的看病问诊
+                        从被动变为主动，让您能永远保持健康。</p> -->
+                        <p>&copy; 2016 秭云科技（上海）有限责任公司</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="footer-ext darkwhite">
+                        <p><a href="about.html">关于我们</a></p>
+                        <p><a href="services.html">解决方案</a></p>
+                        <p><a href=#>其它产品</a></p>
+                        <p><a href="career.html">诚邀加入</a></p>
+                        <p><a href="contact.html">联系我们</a></p>
+                        <p><a href="blog.html">博客</a></p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3">
+                        <div class="footer-ext darkwhite">
+                        <p><i class="fa fa-envelope fa-lg"></i>&nbsp;&nbsp;<a href="mailto:customer@ziyuncloud.com">customer@ziyuncloud.com</a></p>
+                        <p><i class="fa fa-wechat fa-lg"></i>&nbsp;&nbsp;微信</p>
+                        <p><i class="fa fa-weibo fa-lg"></i>&nbsp;&nbsp;微博</p>
+                        <p><i class="fa fa-facebook-square fa-lg"></i>&nbsp;&nbsp;Facebook</p>
+                        <p><i class="fa fa-github-square fa-lg"></i>&nbsp;&nbsp;Github</p>
+                        </div>
+                    </div>
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.section -->
+
+    <!-- </div>/.fullpage -->
 
     <!-- jQuery -->
     <script src="js/jquery-1.9.1.min.js"></script>

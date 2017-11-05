@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="baidu-site-verification" content="5K80ZmpYo7">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>秭云大数据金融实时方案</title>
+    <meta name="robots" content="noarchive">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="js/plugins/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+  <body>
+    <div id="fullpage">
+
+
+      <div class="section">
+        <div class="container">
+          <div class="map-title color-blue">全国营业网点实时KPI <font color="#909090" size="4px">不同色块用于指示KPI高低</font></div>
+          <div id="map-china-container"></div>
+        </div>
+      </div>
+
+
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/plugins/jquery.fullpage.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/map/highmaps.js"></script>
+    <script src="js/map/cn-all-sar-taiwan.js"></script>
+    <script>
+
+      var data = [{
+              "hc-key": "cn-bj",
+              "color": "#FF6600",
+              "value": "北京／网点综合KPI - 89"
+          }, {
+              "hc-key": "cn-tj",
+              "color": "#CCCC99",
+              "value": "天津／网点综合KPI - 78"
+          }, {
+              "hc-key": "cn-gd",
+              "color": "#FF9999",
+              "value": "广东／网点综合KPI - 84"
+          }, {
+              "hc-key": "cn-sh",
+              "color": "#FF6600",
+              "value": "上海／网点综合KPI - 88"
+          }, {
+              "hc-key": "cn-sz",
+              "color": "#FF9966",
+              "value": "深圳／网点综合KPI - 86"
+          }, {
+              "hc-key": "cn-sc",
+              "color": "#F8B875",
+              "value": "四川／网点综合KPI - 60"
+          }, {
+              "hc-key": "cn-js",
+              "color": "#FF9966",
+              "value": "江苏／网点综合KPI - 82"
+          }, {
+              "hc-key": "cn-fj",
+              "color": "#CCCC99",
+              "value": "福建／网点综合KPI - 79"
+          }, {
+              "hc-key": "cn-hu",
+              "color": "#CCCC99",
+              "value": "湖北／网点综合KPI - 69"
+          }, {
+              "hc-key": "cn-zj",
+              "color": "#F8B875",
+              "value": "浙江／网点综合KPI - 90"
+          }],
+          resizeTimestamp;
+
+      $('#fullpage').fullpage({
+          navigation: true,
+          onLeave: function(index, nextIndex, direction) {
+              var ele = '#navbar',
+                      $ele = $(ele);
+              $ele.removeClass('navbar-white navbar-green');
+              switch (nextIndex) {
+                  case 2:
+                  case 3:
+                      $ele.addClass('navbar-green');
+                      break;
+              }
+          }
+      });
+
+      function drawMap() {
+          var mapConfig = {
+              title: {
+                  text: null
+              },
+              tooltip: {
+                  formatter: function () {
+                      return this.point.value;
+                  }
+              }
+          };
+          $('#map-china-container').highcharts('Map', $.extend({}, mapConfig, {
+              chart: {
+                  backgroundColor: '#FFFFFF'
+              },
+              series : [{
+                  data: data,
+                  mapData: Highcharts.maps['countries/cn/custom/cn-all-sar-taiwan'],
+                  color: "#FFFFFF",
+                  borderColor: "#6699FF",
+                  borderWidth: 1.5,
+                  nullColor: "#99CCFF",
+                  joinBy: 'hc-key',
+                  showInLegend: false,
+                  states: {
+                      hover: {
+                          color: '#F8B875'
+                      }
+                  }
+              }]
+          }));
+
+          $('text > tspan:first').each(function() {
+              if ($(this).text() == 'Highcharts') {
+                  $(this).parent().remove();
+              }
+          });
+      }
+
+      var resizeMapHandler = function() {
+          if (resizeTimestamp) {
+              window.clearTimeout(resizeTimestamp);
+          }
+          resizeTimestamp = setTimeout(function() {
+              var mapHeight = $('.section').height() - 90 + 'px'
+              $('#map-china-container').css({
+                  paddingTop: '90px',
+                  height: mapHeight
+              });
+              drawMap();
+          }, 320)
+      };
+
+      $(document).ready(function() {
+          resizeMapHandler();
+          $(window).resize(resizeMapHandler);
+      });
+
+    </script>
+  </body>
+</html>

@@ -56,16 +56,16 @@
             <div class="collapse navbar-collapse" id="ziyun-navbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html">主页</a></li>
-                    <li class="active"><a href="#">我们</a></li>
-                    <li class="dropdown">
+                    <li><a href="about.html">我们</a></li>
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">核心技术 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="bigdata.html">秭云大数据云平台&trade;</a>
                             </li>
                             <li role="separator" class="divider"></li>
-                            <li>
-                                <a href="deepecg.html">DeepECG&trade;</a>
+                            <li class="active">
+                                <a href="#">DeepECG&trade;</a>
                             </li>
                             <li class="disabled">
                                 <a href="#">DeepMI&trade; (Coming Soon)</a>
@@ -82,13 +82,13 @@
                             <li>
                                 <a href="education.html">大数据教育解决方案</a>
                             </li>
-                            <li class="disabled">
+                            <li>
                                 <a href="finance.html">大数据金融解决方案</a>
                             </li>
                         </ul>
                     </li>
                     <li class="disabled"><a href="#">博客</a></li>
-                    <li><a href="en/about.html">EN</a></li>
+                    <li><a href="en/deepecg.html">EN</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -98,142 +98,195 @@
 
     <!-- Page Content -->
 
-    <!-- Header Carousel -->
     <header class="carousel">
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image:url('assets/images/team.jpg');"></div>
+                <div class="fill" style="background-image:url('assets/images/deepecg.jpg');"></div>
                 <div class="carousel-caption">
-                    <h2>
-                        <i class="fa fa-quote-left" aria-hidden="true"></i>以数据+算法为驱动，解决健康医疗领域中的商业问题
-                        <i class="fa fa-quote-right" aria-hidden="true"></i>
-                    </h2>
-                    <h4 style="color:#dddddd"><i class="fa fa-minus" aria-hidden="true"></i>&nbsp;秭云程序猿和攻城狮</h4>
+                    <h2>基于深度学习的心律不齐和冠心病自动检测算法</h2>
+                    <h4>可公有云和私有云弹性部署，RESTful API调用</h4>
                     <h4><a href="mailto:customer@ziyuncloud.com" class="btn btn-custom-lg btn-shadow btn-lg">联系我们</a></h4>
                 </div>
                 <div class="overlay-detail"></div>
             </div>
     </header>
 
-    <!-- Our team Section -->
-    <section class="content-section alt-bg-light">
+    <section class="content-section">
+        <!-- <div class="section"> -->
         <div class="container container-to-md">
+            <div class="col-md-12 text-center py4">
+                <h2>云平台架构</h2>
+                <hr class="featurette-divider">
+            </div>
+            <hr class="featurette-divider invisible">
 
-            <div class="col-md-12 text-center">
-                <h2>我们的文化</h2>
-            </div><!-- /.col-md-12 -->
+            <article class="content-container flex-centered flex-stackable">
 
-            <hr class="featurette-divider">
-            <div class="row center-block">
-                <div class="col-md-3">
-                    <figure>
-                    <img src="assets/images/yinyang.png" alt="" class="img-responsive center-block">
-                    </figure>
-                    <div class="caption red text-center center-block">信念</div>
-                    <div class="bio lightblack text-center center-block">我们是一群热爱医疗大数据的互联网开拓者。</div>
-                </div><!-- /.col-md-4 -->
+                <div class="flex-item _100-width-sm">
+                    <img src="assets/images/ziyun_deepecg_arch.png" class="center-block img-responsive img-shadow">
+                </div>
 
-
-                <div class="col-md-3">
-                    <figure>
-                    <img src="assets/images/mindmap.png" alt="" class="img-responsive center-block">
-                    </figure>
-                    <div class="caption red text-center center-block">开明</div>
-                    <div class="bio lightblack text-center center-block">我们乐于尝试新的事物、想法、和技术。我们永远倾听来至各方的声音。</div>
-                </div><!-- /.col-md-4 -->
-
-                <div class="col-md-3">
-                    <figure>
-                    <img src="assets/images/action.png" alt="" class="img-responsive center-block">
-                    </figure>
-                    <div class="caption red text-center center-block">行动</div>
-                    <div class="bio lightblack text-center center-block">少说多做是我们做事风格。秭云的工程开发一直秉承着快速迭代的原则。</div>
-                </div><!-- /.col-md-4 -->
-
-                <div class="col-md-3">
-                    <figure>
-                    <img src="assets/images/handshake.png" alt="" class="img-responsive center-block">
-                    </figure>
-                    <div class="caption red text-center center-block">合作</div>
-                    <div class="bio lightblack text-center center-block">团结就是力量。在秭云，你永远不是一个人在战斗。</div>
-                </div><!-- /.col-md-4 -->
-
-
-            </div><!-- /.row -->
+                <div class="flex-item _100-width-sm gray">
+                    <dl>
+                    <dt class="h4 lightblack">自动分级诊疗</dt>
+                    <dd class="h5 py1">
+                      <p>
+                        自动分类正常vs不正常心电图，将医疗资源花在刀刃上。
+                      </p>
+                      <p>
+                        提供不正常心电图辅助诊疗报告，提高医生诊断效率。
+                      </p>
+                    </dd>
+                    <dt class="h4 lightblack">云端部署+RESTful API</dt>
+                    <dd class="h5 py1">
+                        <p>
+                        Docker封装，分布式运行，云端弹性部署。
+                        </p>
+                        <p>
+                        提供RESTFUL APIs，既可Web端，又可Mobile调用。
+                        </p>
+                        <p>
+                        可私有云部署。
+                        </p>
+                    </dd>
+                    </dl>
+                </div>
+            </article><!-- /.row -->
         </div><!-- /.container -->
-    </section><!-- /.our-team -->
+    </section><!-- /.section -->
+
+    <section class="content-section alt-bg-light">
+        <!-- <div class="section"> -->
+        <div class="container container-to-md">
+            <div class="col-md-12 text-center py4">
+                <h2>算法流程</h2>
+                <hr class="featurette-divider">
+            </div>
+            <hr class="featurette-divider invisible">
+
+            <article class="content-container flex-centered flex-stackable">
+
+                <div class="flex-item _100-width-sm">
+                    <img src="assets/images/deepecg_flowchart.png" class="center-block img-responsive">
+                </div>
+            </article><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.section -->
 
     <section class="content-section">
+        <!-- <div class="section"> -->
         <div class="container container-to-md">
-            <div class="col-md-12 text-center">
-                <h2>核心团队</h2>
+            <div class="col-md-12 text-center py4">
+                <h2>云端弹性部署</h2>
+                <hr class="featurette-divider">
             </div>
+            <hr class="featurette-divider invisible">
 
-            <hr class="featurette-divider">
+            <article class="content-container flex-centered flex-stackable">
 
-            <div class="row">
-                <div class="col-md-6 team-member">
-                    <figure>
-                    <img src="assets/images/simon_wexin_avatar.png" alt="" class="img-responsive img-circle img-shadow center-block">
-                    <figcaption>
-                        <h4 class="red text-center">吴刚博士</h4>
-                        <p class="lightblack text-center center-block">联合创始人&CTO</p>
+                <div class="flex-item _100-width-sm">
+                    <img src="assets/images/deepecg_cloud_deployment.png" class="center-block img-responsive img-shadow">
+                </div>
 
-                        <div class="social-icons text-center">
-                        <a href="https://facebook.com/simon.wu.5036"><i class="fa fa-facebook fa-2x gray" aria-hidden="true"></i></a>
-                        <!-- <a href=""><i class="fa fa-wechat fa-2x gray"></i></a> -->
-                        <!-- <a href=""><i class="fa fa-weibo fa-2x gray"></i></a> -->
-                        <a href="https://www.linkedin.com/in/simonandluna"><i class="fa fa-linkedin fa-2x gray"></i></a>
-                        <a href="mailto:simon.wu@ziyuncloud.com"><i class="fa fa-envelope fa-2x gray"></i></a>
-                        </div>
+                <div class="flex-item _100-width-sm gray">
+                    <dl>
+                    <dt class="h4 lightblack">可公有云或私有云部署</dt>
+                    <dd class="h5 py1">
+                      <p>
+                        Docker封装。
+                      </p>
+                      <p>
+                        可实时扩展。
+                      </p>
+                      <p>
+                        负载均衡。
+                      </p>
+                      <p>
+                        高稳定性。
+                      </p>
+                    </dd>
+                    </dl>
+                </div>
+            </article><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.section -->
 
-                        <p class="lightblack text-center center-block">
-                            美国加州大学Santa Barbara电子与计算机工程系博士学位，主要研究大规模机器学习的理论和应用。拥有硅谷十多年工作经验，曾就职于IBM，Intel, Microsoft, Twitter, and HTC。在ICML,  NIPS，SIGKDD，CVPR，ACMMM等国际学术会议和期刊上已经发表过24篇关于机器学习及其应用的学术文章。
-                        </p>
-                    </figcaption>
-                    </figure>
-                </div><!-- /.col-md-6 -->
+    <section class="content-section alt-bg-light">
+        <!-- <div class="section"> -->
+        <div class="container container-to-md">
+            <div class="col-md-12 text-center py4">
+                <h2>RESTful API</h2>
+                <hr class="featurette-divider">
+            </div>
+            <hr class="featurette-divider invisible">
 
-                <div class="col-md-6 team-member">
-                    <figure>
-                    <img src="assets/images/jack_avatar.png" alt="" class="img-responsive img-circle img-shadow center-block">
-                    <figcaption>
-                        <h4 class="red text-center">黄鉴</h4>
-                        <p class="lightblack text-center center-block">联合创始人&CEO</p>
+            <article class="content-container flex-centered flex-stackable">
 
-                        <div class="social-icons text-center">
-                        <a ><i class="fa fa-wechat fa-2x gray"></i></a>
-                        <!-- <a href=""><i class="fa fa-weibo fa-2x gray"></i></a> -->
-                        <a><i class="fa fa-linkedin fa-2x gray"></i></a>
-                        <a href="mailto:jian.huang@ziyuncloud.com"><i class="fa fa-envelope fa-2x gray"></i></a>
-                        </div>
-                        <p class="lightblack text-center center-block">
-                        原高通上海研发中心高级经理。曾先后就职于华为、UTStarcom、Pixelworks、和初创企业Celestial。复旦大学微电子硕士，在集成电路行业有18年经验。
-                        </p>
-                    </figcaption>
-                    </figure>
-                </div><!-- /.col-md-6 -->
+                <div class="flex-item _100-width-sm gray">
+                    <dl>
+                    <dt class="h4 lightblack">支持多应用、多模型</dt>
+                    <dd class="h5 py1">
+                      <p>
+                        用户可以创立多个应用和模型，方便产品和开发的独立进行。
+                      </p>
+                    </dd>
+                    <dt class="h4 lightblack">疾病识别</dt>
+                    <dd class="h5 py1">
+                      <p>
+                        可以准确区分正常心律vs非正常心律，准确率和召回率>99.5%。
+                      </p>
+                      <p>
+                        可以识别23种心律不齐，包括心动过速、过缓、和房颤等，准确率和召回率>98%。
+                      </p>
+                      <p>
+                        可以识别常见的冠心病，包括心肌梗塞、心力衰竭、心肌炎等，总体准确率和召回率>92%。
+                      </p>
+                    </dd>
+                    <dt class="h4 lightblack">丰富数据支持</dt>
+                      <p>
+                        支持单导联的心律不齐的识别，比如i、ii、或v5等。
+                      </p>
+                      <p>
+                        支持多导联的心脏疾病的识别，比如使用3、5、或者12导联等。
+                      </p>
+                      <p>
+                        支持不同采样频率的心电数据。
+                      </p>
+                    </dl>
+                    <dt class="h4 lightblack">HRV指标计算</dt>
+                      <p>
+                        提供心跳均值、最大最小心跳、以及其它HRV指标实时计算。
+                      </p>
+                    </dl>
+                </div>
 
-                <!--<div class="col-md-4 team-member">
-                    <figure>
-                    <img src="assets/images/professor_avatar.jpg" alt="" class="img-responsive img-circle img-shadow center-block">
-                    <figcaption>
-                        <h4 class="red text-center">张志华教授</h4>
-                        <p class="lightblack text-center center-block">首席算法顾问</p>
+                <div class="flex-item _100-width-sm">
+                    <img src="assets/images/deepecg_restful_example.png" class="center-block img-responsive img-shadow">
+                </div>
+            </article><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.section -->
 
-                        <div class="social-icons text-center">
-                        <a href=""><i class="fa fa-wechat fa-2x gray"></i></a>
-                        <a href=""><i class="fa fa-weibo fa-2x gray"></i></a>
-                        <a href=""><i class="fa fa-linkedin fa-2x gray"></i></a>
-                        </div>
-                        <p class="lightblack text-center center-block">
-                            北京大学数据系教授和博士生导师，兼任大数据研究中心教授。美国加州大学Berkeley博士后。主要研究方向是统计机器学习和深度学习的理论研究，前上海交通大学计算机系和浙江大学计算机系教授和博士生导师。
-                        </p>
-                    </figcaption>
-                    </figure>
-                </div>-->
+    <section class="content-section">
+        <!-- <div class="section"> -->
+        <div class="container container-to-md">
+            <div class="col-md-12 text-center py4">
+                <h2>心律不齐和心脏疾病自动识别</h2>
+                <hr class="featurette-divider">
+            </div>
+            <hr class="featurette-divider invisible">
 
-            </div><!-- /.row -->
+            <article class="content-container flex-centered flex-stackable">
+
+                <div class="flex-item _100-width-sm text-center">
+                    <img src="assets/images/supported_arrhythmia_cn.png" class="center-block img-responsive">
+                </div>
+
+                <div class="flex-item _100-width-sm text-center">
+                    <img src="assets/images/supported_disease_cn.png" class="center-block img-responsive">
+                </div>
+
+            </article><!-- /.row -->
         </div><!-- /.container -->
     </section><!-- /.section -->
 
@@ -284,7 +337,6 @@
         </div><!-- /.container -->
     </section><!-- /.section -->
 
-
     <!-- jQuery -->
     <script src="js/jquery-1.11.3.min.js"></script>
 
@@ -299,12 +351,12 @@
     <!-- Ziyun JavaScript -->
     <script src="js/ziyun.js"></script>
 
-<!--     <script>
+    <script>
       $('#fullpage').fullpage({
           navigation: true,
           sectionsColor: ['#ede7e3', '#ede7e3', '#ede7e3', '#ede7e3', '#ede7e3', 'white', '#5f5f5f', '#5f5f5f'],
       });
-    </script> -->
+    </script>
 </body>
 
 </html>
